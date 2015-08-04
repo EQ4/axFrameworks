@@ -1,0 +1,42 @@
+[submodule "modules/axUtils"]
+	path = modules/axUtils
+	url = https://github.com/axlib/axUtils.git
+[submodule "modules/axAudio"]
+	path = modules/axAudio
+	url = https://github.com/axlib/axAudio.git
+[submodule "modules/axAudioServer"]
+	path = modules/axAudioServer
+	url = https://github.com/axlib/axAudioServer.git
+[submodule "modules/axAudioWidget"]
+	path = modules/axAudioWidget
+	url = https://github.com/axlib/axAudioWidget.git
+[submodule "modules/axCore"]
+	path = modules/axCore
+	url = https://github.com/axlib/axCore.git
+[submodule "modules/axEditor"]
+	path = modules/axEditor
+	url = https://github.com/axlib/axEditor.git
+[submodule "modules/axMath"]
+	path = modules/axMath
+	url = https://github.com/axlib/axMath.git
+[submodule "modules/axServer"]
+	path = modules/axServer
+	url = https://github.com/axlib/axServer.git
+[submodule "modules/axMidi"]
+	path = modules/axMidi
+	url = https://github.com/axlib/axMidi.git
+[submodule "modules/axEvent"]
+	path = modules/axEvent
+	url = https://github.com/axlib/axEvent.git
+[submodule "modules/axPython"]
+	path = modules/axPython
+	url = https://github.com/axlib/axPython.git
+[submodule "modules/axExec"]
+	path = modules/axExec
+	url = https://github.com/axlib/axExec.git
+[submodule "modules/axWidget"]
+	path = modules/axWidget
+	url = https://github.com/axlib/axWidget.git
+[submodule "modules/axGL"]
+	path = modules/axGL
+	url = https://github.com/axlib/axGL.git
