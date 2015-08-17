@@ -37,9 +37,6 @@ function build_combine_lib
 {
 	obj_list=();
 
-	# obj_list+=("/usr/local/lib/libfreetype.a");
-	# obj_list+=("/usr/local/lib/libpng.a");
-
 	combine_libs=( axEvent 
 	   			   axUtils 
 	   			   axGL
@@ -50,11 +47,7 @@ function build_combine_lib
 		obj_list+=(modules/$d/build/*.o);
 	done
 
-	
-
-	
-
-	echo ${obj_list[*]}
+	# echo ${obj_list[*]}
 
 	cd ../
 	ar rsc lib/libaxLibCore.a ${obj_list[*]}
@@ -62,7 +55,7 @@ function build_combine_lib
 
 function build_single_module
 {
-	echo "BUILDING MODULE " "$1";
+	# echo "BUILDING MODULE " "$1";
 
 	cd modules/
 	cd "$1";
@@ -73,7 +66,7 @@ function build_single_module
 
 function clean 
 {
-	echo "Cleaning FUNCTION";
+	# echo "Cleaning FUNCTION";
 
 	cd modules/
 
