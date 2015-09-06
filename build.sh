@@ -38,10 +38,11 @@ function build_combine_lib
 	obj_list=();
 
 	combine_libs=( axEvent 
-	   			   axUtils 
-	   			   axGL
-	   			   axCore
-	   			   axWidget);
+	   	       axUtils 
+	   	       axGL
+	   	       axCore
+	   	       axWidget
+		       axExec);
 
 	for d in ${combine_libs[*]}; do
 		obj_list+=(modules/$d/build/*.o);
@@ -51,6 +52,7 @@ function build_combine_lib
 
 	cd ../
 	ar rsc lib/libaxLibCore.a ${obj_list[*]}
+	clang++ -shared -undefined dynamic_lookup -o lib/libaxLibCore.so ${obj_list[*]}
 }
 
 function build_single_module
@@ -97,6 +99,7 @@ function install
 
 	# Copy all .a lib.
 	cp -v lib/*.a /usr/local/lib/ 2> /dev/null
+	cp -v lib/*.so /usr/local/lib/ 2> /dev/null
 }
 
 opt="$1"
