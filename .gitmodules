@@ -40,3 +40,6 @@
 [submodule "modules/axGL"]
 	path = modules/axGL
 	url = https://github.com/axlib/axGL.git
+[submodule "modules/axDatabase"]
+        path = modules/axDatabse
+        url = https://github.com/axlib/axDatabase.git
