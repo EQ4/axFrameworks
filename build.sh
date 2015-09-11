@@ -16,6 +16,7 @@ libs=( axEvent
 	   axMidi
 	   axServer
 	   axWidget
+       axDatabase
 	   axEditor
 	   axAudioWidget);
 
