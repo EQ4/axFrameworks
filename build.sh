@@ -7,18 +7,10 @@
 libs=( axEvent 
 	   axUtils 
 	   axGL
-	   axMath
 	   axExec
-	   axPython
 	   axCore
-	   axAudio
-	   axAudioServer
-	   axMidi
-	   axServer
 	   axWidget
-       axDatabase
-	   axEditor
-	   axAudioWidget);
+       axDatabase);
 
 function build 
 {
@@ -39,11 +31,12 @@ function build_combine_lib
 	obj_list=();
 
 	combine_libs=( axEvent 
-	   	       axUtils 
-	   	       axGL
-	   	       axCore
-	   	       axWidget
-		       axExec);
+				   axUtils 
+	   	           axGL
+	   	           axCore
+	   	           axWidget
+		           axExec
+				   axDatabase);
 
 	for d in ${combine_libs[*]}; do
 		obj_list+=(modules/$d/build/*.o);
@@ -53,7 +46,9 @@ function build_combine_lib
 
 	cd ../
 	ar rsc lib/libaxLibCore.a ${obj_list[*]}
-	clang++ -shared -undefined dynamic_lookup -o lib/libaxLibCore.so ${obj_list[*]}
+	
+	g++-4.9 -shared -o lib/libaxLibCore.so ${obj_list[*]}
+	#clang++ -shared -undefined dynamic_lookup -o lib/libaxLibCore.so ${obj_list[*]}
 }
 
 function build_single_module
@@ -105,6 +100,8 @@ function install
 
 opt="$1"
 opt2="$2"
+
+mkdir -p ./lib/ 
 
 #------------------------------------------------------------------------------
 # Option : build
