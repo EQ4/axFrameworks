@@ -17,22 +17,22 @@ ax::Url::~Url()
 std::string ax::Url::GetUrlData(const std::string& url)
 {
     std::string str;
-    if(_curl)
-    {
-        curl_easy_setopt(_curl, CURLOPT_URL, url.c_str());
-        curl_easy_setopt(_curl, CURLOPT_WRITEFUNCTION, axUrlApi::writefunc);
-        curl_easy_setopt(_curl, CURLOPT_WRITEDATA, &str);
-        
-        // Perform the request, res will get the return code.
-        res = curl_easy_perform(_curl);
-        
-        // Check for errors.
-        if(res != CURLE_OK)
-        {
-            ax::Error("curl_easy_perform() failed :", 
-                      curl_easy_strerror(res));
-        }
-    }
+//    if(_curl)
+//    {
+//        curl_easy_setopt(_curl, CURLOPT_URL, url.c_str());
+//        curl_easy_setopt(_curl, CURLOPT_WRITEFUNCTION, axUrlApi::writefunc);
+//        curl_easy_setopt(_curl, CURLOPT_WRITEDATA, &str);
+//        
+//        // Perform the request, res will get the return code.
+//        res = curl_easy_perform(_curl);
+//        
+//        // Check for errors.
+//        if(res != CURLE_OK)
+//        {
+//            ax::Error("curl_easy_perform() failed :", 
+//                      curl_easy_strerror(res));
+//        }
+//    }
     
 //    std::cout << "Content : " << std::endl << str << std::endl;
     
