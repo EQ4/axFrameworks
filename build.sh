@@ -19,6 +19,7 @@ function build
 	cd modules/
 
 	for d in ${libs[*]}; do
+		echo $d;
 		cd $d;
 		make
 		cp lib/lib$d.a ../../lib/
@@ -28,6 +29,7 @@ function build
 
 function build_combine_lib
 {
+	echo COMBINE LIB
 	obj_list=();
 
 	combine_libs=( axEvent 
@@ -36,9 +38,10 @@ function build_combine_lib
 	   	           axCore
 	   	           axWidget
 		           axExec
-				   axDatabase);
+				   axDatabase );
 
 	for d in ${combine_libs[*]}; do
+		echo $d;
 		obj_list+=(modules/$d/build/*.o);
 	done
 
