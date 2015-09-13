@@ -48,22 +48,22 @@ axButton        | axSlider          | axKnob            | axToggle          | ax
 ![Delete test](https://dl.dropboxusercontent.com/u/26931825/axLibWebData/ProjectFromScratch_Tst2.png)
 
 5. Delete these files in project navigator and move to trash.
-* **AppDelegate.h** 
-* **AppDelegate.m** 
-* **MainMenu.xib**
+    * **AppDelegate.h** 
+    * **AppDelegate.m** 
+    * **MainMenu.xib**
 
 6. Add these folder to **Search Paths** tab under **Header Search Paths** in project configuration.
-* **/usr/local/include/**
-* **/usr/local/include/freetype2/**
+    * **/usr/local/include/**
+    * **/usr/local/include/freetype2/**
 
 7. Add this folder to **Search Paths** tab under **Library Search Paths** in project configuration.
-* **/usr/local/lib/**
+    * **/usr/local/lib/**
 
 8. Add these flags to **Linking** tab under **Other Linker Flags** still in project configuration.
-* **-laxLibCore**
-* **-lfreetype**
-* **-lpng15**
+    * **-laxLibCore**
+    * **-lfreetype**
+    * **-lpng15**
 
 9. Change **Per-configuration Build Products Path** in **Build Locations** tab to :
-* **$(SRCROOT)/Debug/**
-* **$(SRCROOT)/Release/**
+    * **$(SRCROOT)/Debug/**
+    * **$(SRCROOT)/Release/**
