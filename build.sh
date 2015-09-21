@@ -50,8 +50,8 @@ function build_combine_lib
 	cd ../
 	ar rsc lib/libaxLibCore.a ${obj_list[*]}
 	
-	g++-4.9 -shared -o lib/libaxLibCore.so ${obj_list[*]}
-	#clang++ -shared -undefined dynamic_lookup -o lib/libaxLibCore.so ${obj_list[*]}
+	#g++-4.9 -shared -o lib/libaxLibCore.so ${obj_list[*]}
+	clang++ -shared -undefined dynamic_lookup -o lib/libaxLibCore.so ${obj_list[*]}
 }
 
 function build_single_module

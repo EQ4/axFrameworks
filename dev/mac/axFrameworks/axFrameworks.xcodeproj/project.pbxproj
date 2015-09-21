@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CB54E2E1BACAEB300BD1AC5 /* axEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CB54E2D1BACAEB300BD1AC5 /* axEditor.cpp */; };
+		7CB54E311BACD24200BD1AC5 /* axEditorGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CB54E301BACD24200BD1AC5 /* axEditorGrid.cpp */; };
+		7CBE6A941BA8FEFE005E8FC6 /* axEditorAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A8E1BA8FEFE005E8FC6 /* axEditorAttributes.cpp */; };
+		7CBE6A951BA8FEFE005E8FC6 /* axEditorSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A8F1BA8FEFE005E8FC6 /* axEditorSelector.cpp */; };
+		7CBE6A961BA8FEFE005E8FC6 /* axEditorMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A901BA8FEFE005E8FC6 /* axEditorMenu.cpp */; };
+		7CBE6A971BA8FEFE005E8FC6 /* axEditorToolbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A911BA8FEFE005E8FC6 /* axEditorToolbar.cpp */; };
+		7CBE6A981BA8FEFE005E8FC6 /* axEditorWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A921BA8FEFE005E8FC6 /* axEditorWidget.cpp */; };
+		7CBE6A991BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A931BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp */; };
 		7CD2E3981BA5FDFE00CEADC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD2E3971BA5FDFE00CEADC6 /* Images.xcassets */; };
 		7CD2E5781BA5FE5C00CEADC6 /* axAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D11BA5FE5B00CEADC6 /* axAudio.cpp */; };
 		7CD2E5791BA5FE5C00CEADC6 /* axAudioBiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D21BA5FE5B00CEADC6 /* axAudioBiquadFilter.cpp */; };
@@ -107,6 +115,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CB54E2C1BACAEA900BD1AC5 /* axEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditor.h; sourceTree = "<group>"; };
+		7CB54E2D1BACAEB300BD1AC5 /* axEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditor.cpp; path = source/axEditor.cpp; sourceTree = "<group>"; };
+		7CB54E2F1BACD23900BD1AC5 /* axEditorGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorGrid.h; sourceTree = "<group>"; };
+		7CB54E301BACD24200BD1AC5 /* axEditorGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditorGrid.cpp; path = source/axEditorGrid.cpp; sourceTree = "<group>"; };
+		7CBE6A881BA8FEEB005E8FC6 /* axEditorAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorAttributes.h; sourceTree = "<group>"; };
+		7CBE6A891BA8FEEB005E8FC6 /* axEditorSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorSelector.h; sourceTree = "<group>"; };
+		7CBE6A8A1BA8FEEB005E8FC6 /* axEditorMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorMenu.h; sourceTree = "<group>"; };
+		7CBE6A8B1BA8FEEB005E8FC6 /* axEditorToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorToolbar.h; sourceTree = "<group>"; };
+		7CBE6A8C1BA8FEEB005E8FC6 /* axEditorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorWidget.h; sourceTree = "<group>"; };
+		7CBE6A8D1BA8FEEB005E8FC6 /* axEditorWidgetPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorWidgetPanel.h; sourceTree = "<group>"; };
+		7CBE6A8E1BA8FEFE005E8FC6 /* axEditorAttributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditorAttributes.cpp; path = source/axEditorAttributes.cpp; sourceTree = "<group>"; };
+		7CBE6A8F1BA8FEFE005E8FC6 /* axEditorSelector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditorSelector.cpp; path = source/axEditorSelector.cpp; sourceTree = "<group>"; };
+		7CBE6A901BA8FEFE005E8FC6 /* axEditorMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditorMenu.cpp; path = source/axEditorMenu.cpp; sourceTree = "<group>"; };
+		7CBE6A911BA8FEFE005E8FC6 /* axEditorToolbar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditorToolbar.cpp; path = source/axEditorToolbar.cpp; sourceTree = "<group>"; };
+		7CBE6A921BA8FEFE005E8FC6 /* axEditorWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditorWidget.cpp; path = source/axEditorWidget.cpp; sourceTree = "<group>"; };
+		7CBE6A931BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditorWidgetPanel.cpp; path = source/axEditorWidgetPanel.cpp; sourceTree = "<group>"; };
 		7CD2E38D1BA5FDFD00CEADC6 /* axFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = axFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD2E3911BA5FDFE00CEADC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD2E3971BA5FDFE00CEADC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -317,6 +341,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CBE6A871BA8FE68005E8FC6 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7CB54E301BACD24200BD1AC5 /* axEditorGrid.cpp */,
+				7CB54E2D1BACAEB300BD1AC5 /* axEditor.cpp */,
+				7CBE6A8E1BA8FEFE005E8FC6 /* axEditorAttributes.cpp */,
+				7CBE6A8F1BA8FEFE005E8FC6 /* axEditorSelector.cpp */,
+				7CBE6A901BA8FEFE005E8FC6 /* axEditorMenu.cpp */,
+				7CBE6A911BA8FEFE005E8FC6 /* axEditorToolbar.cpp */,
+				7CBE6A921BA8FEFE005E8FC6 /* axEditorWidget.cpp */,
+				7CBE6A931BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
 		7CD2E3841BA5FDFD00CEADC6 = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +599,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD2E45D1BA5FE5B00CEADC6 /* include */,
+				7CBE6A871BA8FE68005E8FC6 /* source */,
 			);
 			name = axEditor;
 			path = ../../../../modules/axEditor;
@@ -568,6 +608,14 @@
 		7CD2E45D1BA5FE5B00CEADC6 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				7CB54E2F1BACD23900BD1AC5 /* axEditorGrid.h */,
+				7CB54E2C1BACAEA900BD1AC5 /* axEditor.h */,
+				7CBE6A881BA8FEEB005E8FC6 /* axEditorAttributes.h */,
+				7CBE6A891BA8FEEB005E8FC6 /* axEditorSelector.h */,
+				7CBE6A8A1BA8FEEB005E8FC6 /* axEditorMenu.h */,
+				7CBE6A8B1BA8FEEB005E8FC6 /* axEditorToolbar.h */,
+				7CBE6A8C1BA8FEEB005E8FC6 /* axEditorWidget.h */,
+				7CBE6A8D1BA8FEEB005E8FC6 /* axEditorWidgetPanel.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -1007,7 +1055,9 @@
 				7CD2E6351BA5FE5D00CEADC6 /* axInterpole.cpp in Sources */,
 				7CD2E5821BA5FE5C00CEADC6 /* axAudioUtils.cpp in Sources */,
 				7CD2E5F91BA5FE5D00CEADC6 /* axImage.cpp in Sources */,
+				7CBE6A991BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp in Sources */,
 				7CD2E5E11BA5FE5D00CEADC6 /* axOSDynamic.cpp in Sources */,
+				7CB54E2E1BACAEB300BD1AC5 /* axEditor.cpp in Sources */,
 				7CD2E5F41BA5FE5D00CEADC6 /* axFont.cpp in Sources */,
 				7CD2E5F21BA5FE5D00CEADC6 /* axBigImage.cpp in Sources */,
 				7CD2E6321BA5FE5D00CEADC6 /* axControl.cpp in Sources */,
@@ -1026,14 +1076,17 @@
 				7CD2E5BD1BA5FE5D00CEADC6 /* axKeyboardManager.cpp in Sources */,
 				7CD2E6581BA5FE5D00CEADC6 /* axGrid.cpp in Sources */,
 				7CD2E5C01BA5FE5D00CEADC6 /* axPanel.cpp in Sources */,
+				7CBE6A941BA8FEFE005E8FC6 /* axEditorAttributes.cpp in Sources */,
 				7CD2E5941BA5FE5C00CEADC6 /* axWaveformNavigator.cpp in Sources */,
 				7CD2E6191BA5FE5D00CEADC6 /* axServerCore.cpp in Sources */,
 				7CD2E57C1BA5FE5C00CEADC6 /* axAudioCore.cpp in Sources */,
+				7CBE6A951BA8FEFE005E8FC6 /* axEditorSelector.cpp in Sources */,
 				7CD2E5801BA5FE5C00CEADC6 /* axAudioFrames.cpp in Sources */,
 				7CD2E57E1BA5FE5C00CEADC6 /* axAudioFilter.cpp in Sources */,
 				7CD2E63C1BA5FE5D00CEADC6 /* axString.cpp in Sources */,
 				7CD2E61D1BA5FE5D00CEADC6 /* axUrl.cpp in Sources */,
 				7CD2E57D1BA5FE5C00CEADC6 /* axAudioEnvelope.cpp in Sources */,
+				7CBE6A981BA8FEFE005E8FC6 /* axEditorWidget.cpp in Sources */,
 				7CD2E6331BA5FE5D00CEADC6 /* axDirection.cpp in Sources */,
 				7CD2E63D1BA5FE5D00CEADC6 /* axVar.cpp in Sources */,
 				7CD2E5BB1BA5FE5D00CEADC6 /* axCore.cpp in Sources */,
@@ -1041,6 +1094,7 @@
 				7CD2E5BA1BA5FE5D00CEADC6 /* axConfig.cpp in Sources */,
 				7CD2E5921BA5FE5C00CEADC6 /* axParametricEq.cpp in Sources */,
 				7CD2E5C41BA5FE5D00CEADC6 /* axWindowManager.cpp in Sources */,
+				7CB54E311BACD24200BD1AC5 /* axEditorGrid.cpp in Sources */,
 				7CD2E65D1BA5FE5D00CEADC6 /* axPopupMenu.cpp in Sources */,
 				7CD2E6361BA5FE5D00CEADC6 /* axPoint2D.cpp in Sources */,
 				7CD2E5F61BA5FE5D00CEADC6 /* axGC.cpp in Sources */,
@@ -1056,6 +1110,7 @@
 				7CD2E5B81BA5FE5D00CEADC6 /* axApp.cpp in Sources */,
 				7CD2E6591BA5FE5D00CEADC6 /* axKnob.cpp in Sources */,
 				7CD2E5C21BA5FE5D00CEADC6 /* axWidgetBuilder.cpp in Sources */,
+				7CBE6A971BA8FEFE005E8FC6 /* axEditorToolbar.cpp in Sources */,
 				7CD2E5F31BA5FE5D00CEADC6 /* axDefaultFontBuffer.cpp in Sources */,
 				7CD2E5E21BA5FE5D00CEADC6 /* axOSFileSystem.cpp in Sources */,
 				7CD2E6341BA5FE5D00CEADC6 /* axFlag.cpp in Sources */,
@@ -1067,6 +1122,7 @@
 				7CD2E57B1BA5FE5C00CEADC6 /* axAudioBufferPlayer.cpp in Sources */,
 				7CD2E65F1BA5FE5D00CEADC6 /* axScrollBar.cpp in Sources */,
 				7CD2E5951BA5FE5C00CEADC6 /* FilterParametric.cpp in Sources */,
+				7CBE6A961BA8FEFE005E8FC6 /* axEditorMenu.cpp in Sources */,
 				7CD2E5D31BA5FE5D00CEADC6 /* axEventManager.cpp in Sources */,
 				7CD2E5BE1BA5FE5D00CEADC6 /* axMouseManager.cpp in Sources */,
 				7CD2E6571BA5FE5D00CEADC6 /* axDropMenu.cpp in Sources */,
@@ -1266,6 +1322,7 @@
 				7CD2E3AC1BA5FDFE00CEADC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
