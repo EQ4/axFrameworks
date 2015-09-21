@@ -10,15 +10,67 @@
 	<string>axFrameworks</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>15F60E33ED8418ECF3284D50AC940FCABB1C1A3B</key>
+		<string>https://github.com/axlib/axAudioWidget.git</string>
+		<key>17A2759E7F231E90CC2EE3199A35B5AF257F6BDE</key>
+		<string>https://github.com/axlib/axUtils.git</string>
+		<key>2063FCACE2B5AC08CA4EEF1EFEED449321018886</key>
+		<string>https://github.com/axlib/axGL.git</string>
+		<key>442EE830340D232CB721D5A93977DDAF333C1C35</key>
+		<string>https://github.com/axlib/axPython.git</string>
 		<key>4A95909481E1CE38D7ABFC1A623FC30095912A21</key>
 		<string>https://github.com/axlib/axFrameworks.git</string>
+		<key>77291991FD7C55CDDCD6AE4541627311F747C982</key>
+		<string>https://github.com/axlib/axServer.git</string>
+		<key>A30B41ED2F4002D56C1C89AFE4D3DAE37A75F1F8</key>
+		<string>https://github.com/axlib/axMath.git</string>
+		<key>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</key>
+		<string>https://github.com/axlib/axCore.git</string>
+		<key>D202CB0C4C45DC71E14F8B9F728D038837E0BDAD</key>
+		<string>https://github.com/axlib/axWidget.git</string>
+		<key>D7EBD53F0FDB5312F92CFBA2456D474B4DE75225</key>
+		<string>https://github.com/axlib/axDatabase.git</string>
+		<key>E7F84313FB85470DBE59DF833E6589D56A56F338</key>
+		<string>https://github.com/axlib/axAudio.git</string>
+		<key>EA7AFC8FD4BC717DC9CDFF77483C0BBF0BF5E9DA</key>
+		<string>https://github.com/axlib/axExec.git</string>
+		<key>EAB40478446B5DACC773F71BE261D44104DB6357</key>
+		<string>https://github.com/axlib/axMidi.git</string>
+		<key>FB751B3D275CC12088E3B14853CD763F49FADC91</key>
+		<string>https://github.com/axlib/axEvent.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>dev/mac/axFrameworks/axFrameworks.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>15F60E33ED8418ECF3284D50AC940FCABB1C1A3B</key>
+		<string>../../../../../modules/axAudioWidget</string>
+		<key>17A2759E7F231E90CC2EE3199A35B5AF257F6BDE</key>
+		<string>../../../../../modules/axUtils</string>
+		<key>2063FCACE2B5AC08CA4EEF1EFEED449321018886</key>
+		<string>../../../../../modules/axGL</string>
+		<key>442EE830340D232CB721D5A93977DDAF333C1C35</key>
+		<string>../../../../../modules/axPython</string>
 		<key>4A95909481E1CE38D7ABFC1A623FC30095912A21</key>
 		<string>../../../../..</string>
+		<key>77291991FD7C55CDDCD6AE4541627311F747C982</key>
+		<string>../../../../../modules/axServer</string>
+		<key>A30B41ED2F4002D56C1C89AFE4D3DAE37A75F1F8</key>
+		<string>../../../../../modules/axMath</string>
+		<key>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</key>
+		<string>../../../../../modules/axCore</string>
+		<key>D202CB0C4C45DC71E14F8B9F728D038837E0BDAD</key>
+		<string>../../../../../modules/axWidget</string>
+		<key>D7EBD53F0FDB5312F92CFBA2456D474B4DE75225</key>
+		<string>../../../../../modules/axDatabase</string>
+		<key>E7F84313FB85470DBE59DF833E6589D56A56F338</key>
+		<string>../../../../../modules/axAudio</string>
+		<key>EA7AFC8FD4BC717DC9CDFF77483C0BBF0BF5E9DA</key>
+		<string>../../../../../modules/axExec</string>
+		<key>EAB40478446B5DACC773F71BE261D44104DB6357</key>
+		<string>../../../../../modules/axMidi</string>
+		<key>FB751B3D275CC12088E3B14853CD763F49FADC91</key>
+		<string>../../../../../modules/axEvent</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/axlib/axFrameworks.git</string>
@@ -32,9 +84,113 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7F84313FB85470DBE59DF833E6589D56A56F338</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axAudio</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>15F60E33ED8418ECF3284D50AC940FCABB1C1A3B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axAudioWidget</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axCore</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D7EBD53F0FDB5312F92CFBA2456D474B4DE75225</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axDatabase</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FB751B3D275CC12088E3B14853CD763F49FADC91</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axEvent</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA7AFC8FD4BC717DC9CDFF77483C0BBF0BF5E9DA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axExec</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>4A95909481E1CE38D7ABFC1A623FC30095912A21</string>
 			<key>IDESourceControlWCCName</key>
 			<string>axFrameworks</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2063FCACE2B5AC08CA4EEF1EFEED449321018886</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axGL</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A30B41ED2F4002D56C1C89AFE4D3DAE37A75F1F8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axMath</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EAB40478446B5DACC773F71BE261D44104DB6357</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axMidi</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>442EE830340D232CB721D5A93977DDAF333C1C35</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axPython</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>77291991FD7C55CDDCD6AE4541627311F747C982</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axServer</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>17A2759E7F231E90CC2EE3199A35B5AF257F6BDE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axUtils</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D202CB0C4C45DC71E14F8B9F728D038837E0BDAD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axWidget</string>
 		</dict>
 	</array>
 </dict>
