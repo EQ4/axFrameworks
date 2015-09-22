@@ -22,6 +22,8 @@
 		<string>https://github.com/axlib/axFrameworks.git</string>
 		<key>77291991FD7C55CDDCD6AE4541627311F747C982</key>
 		<string>https://github.com/axlib/axServer.git</string>
+		<key>8768291391C042C5E68B260F840BA5DDD1C4BA6B</key>
+		<string>https://github.com/axlib/axEditor.git</string>
 		<key>A30B41ED2F4002D56C1C89AFE4D3DAE37A75F1F8</key>
 		<string>https://github.com/axlib/axMath.git</string>
 		<key>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</key>
@@ -55,6 +57,8 @@
 		<string>../../../../..</string>
 		<key>77291991FD7C55CDDCD6AE4541627311F747C982</key>
 		<string>../../../../../modules/axServer</string>
+		<key>8768291391C042C5E68B260F840BA5DDD1C4BA6B</key>
+		<string>../../../../../modules/axEditor</string>
 		<key>A30B41ED2F4002D56C1C89AFE4D3DAE37A75F1F8</key>
 		<string>../../../../../modules/axMath</string>
 		<key>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</key>
@@ -111,6 +115,14 @@
 			<string>D7EBD53F0FDB5312F92CFBA2456D474B4DE75225</string>
 			<key>IDESourceControlWCCName</key>
 			<string>axDatabase</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8768291391C042C5E68B260F840BA5DDD1C4BA6B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>axEditor</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
