@@ -115,6 +115,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C1027CE1BB048010064F1BD /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		7CB54E2C1BACAEA900BD1AC5 /* axEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditor.h; sourceTree = "<group>"; };
 		7CB54E2D1BACAEB300BD1AC5 /* axEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axEditor.cpp; path = source/axEditor.cpp; sourceTree = "<group>"; };
 		7CB54E2F1BACD23900BD1AC5 /* axEditorGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axEditorGrid.h; sourceTree = "<group>"; };
@@ -398,6 +399,7 @@
 				7CD2E3971BA5FDFE00CEADC6 /* Images.xcassets */,
 				7CD2E3901BA5FDFE00CEADC6 /* Supporting Files */,
 				7CD2E66C1BA6042F00CEADC6 /* main.cpp */,
+				7C1027CE1BB048010064F1BD /* main.h */,
 			);
 			path = axFrameworks;
 			sourceTree = "<group>";
