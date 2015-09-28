@@ -3,6 +3,9 @@
 #include "axWindowTree.h"
 #include "axSlider.h"
 
+#include "axMathVector.h"
+#include "axFrameBuffer.h"
+
 NumberScroll::NumberScroll(ax::Window* parent, const ax::Rect& rect, const int& num):
 axKnob(parent,
        rect,
@@ -202,8 +205,10 @@ void Settings::OnPaint()
 
 
 
-AlarmClock::AlarmClock(ax::App* app, const ax::Rect& rect):
-ax::Window(app, rect),
+//AlarmClock::AlarmClock(ax::App* app, const ax::Rect& rect):
+AlarmClock::AlarmClock(ax::Window* parent, const ax::Rect& rect):
+
+ax::Window(parent, rect),
 _font(0),
 _font_clock("alarm_clock.ttf")
 {
@@ -243,8 +248,8 @@ _font_clock("alarm_clock.ttf")
     _settings = new Settings(this, rect);
     _settings->Hide();
     
-    axWindowTree* tree = GetApp()->GetWindowManager()->GetWindowTree();
-    axWindowNode* node = tree->Get(this);
+//    axWindowTree* tree = GetApp()->GetWindowManager()->GetWindowTree();
+//    axWindowNode* node = tree->Get(this);
     
 }
 
@@ -286,19 +291,149 @@ void AlarmClock::OnPaint()
 
 
 
+class MyPanel : public ax::Panel3D
+{
+public:
+    MyPanel(ax::Window* parent,const ax::Rect& rect, AlarmClock* alarm):
+    ax::Panel3D(parent, rect),
+    _alarm(alarm)
+    {
+        
+    }
+    
+private:
+    AlarmClock* _alarm;
+    
+    
+    void DrawQuad(ax::Math::Vec3<double>* vecs,
+                  ax::Color* colors = nullptr,
+                  ax::Math::Vec3<double>* texs = nullptr,
+                  unsigned int tex_id = 0)
+    {
+        glEnableClientState(GL_VERTEX_ARRAY);
+        glVertexPointer(3, GL_DOUBLE, 0, vecs);
+        
+        if(texs != nullptr)
+        {
+            glEnable(GL_TEXTURE_2D);
+            glBindTexture(GL_TEXTURE_2D, tex_id);
+            glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+            
+            double tex_coord[8] = {0.0, 0.0,  1.0, 0.0,  1.0, 1.0,  0.0, 1.0 };
+            glTexCoordPointer(2, GL_DOUBLE, 0, tex_coord);
+            
+           
+        }
+        
+        if(colors != nullptr)
+        {
+            glEnableClientState(GL_COLOR_ARRAY);
+            glColorPointer(4, GL_DOUBLE, 0, colors);
+        }
+        
+        glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+    
+        glDisableClientState(GL_COLOR_ARRAY);
+        glDisableClientState(GL_VERTEX_ARRAY);
+        glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+    }
+    
+    virtual void OnPaint3D()
+    {
+        glTranslated(0.0, 0.0, -2.5);
+//        glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
+        
+        ax::GC gc;
+        glEnable(GL_LINE_SMOOTH);       glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+        glEnable(GL_POLYGON_SMOOTH);    glHint(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
+        
+        using Vec3 = ax::Math::Vec3<double>;
+        
+        Vec3 quad[4] = { Vec3(0.00,  0.00,  0.00),
+                         Vec3(0.75,  0.00, -2.00),
+                         Vec3(0.75,  0.75, -2.00),
+                         Vec3(0.00,  0.75,  0.00) };
+        
+        Vec3 tex[4] = { Vec3(0.0, 0.0, 0.0),
+            Vec3(1.0, 0.0, 0.0),
+            Vec3(1.0, 1.0, 0.0),
+            Vec3(0.0, 1.0, 0.0) };
+        
+        ax::Color colors[4] = { ax::Color(1.0, 0.0, 0.0),
+                                ax::Color(0.0, 1.0, 0.0),
+                                ax::Color(0.0, 0.0, 1.0),
+                                ax::Color(1.0, 1.0, 0.0) };
+        
+        Vec3 quad2[4] = { Vec3(-1.00,  0.00,  0.00),
+                          Vec3( 0.00,  0.00,  0.00),
+                          Vec3( 0.00,  0.75,  0.00),
+                          Vec3(-1.00,  0.75,  0.00) };
+        
+        glLineWidth(2);
+        gc.SetColor(ax::Color(0.5));
+        
+        
+        DrawQuad(quad2, nullptr, tex, _alarm->GetFrameBuffer()->GetFrameBufferTexture());
+        DrawQuad(quad, nullptr, tex, _alarm->GetFrameBuffer()->GetFrameBufferTexture());
+        
+        glDisableClientState(GL_COLOR_ARRAY);
+        glDisableClientState(GL_VERTEX_ARRAY);
+        
+        
+        
+        
+        glPolygonMode( GL_FRONT_AND_BACK, GL_FILL );
+        
+        glDisable(GL_LINE_SMOOTH);
+        glDisable(GL_POLYGON_SMOOTH);
+    }
+    
+    virtual void OnPaint()
+    {
+        ax::GC gc;
+        ax::Rect rect(GetDrawingRect());
+        
+        gc.SetColor(ax::Color(1.0));
+        gc.DrawRectangle(rect);
+        
+        gc.SetColor(ax::Color(0.0, 0.0, 0.0));
+        gc.DrawRectangleContour(rect);
+    }
+};
+
+
+
+
+
+
+
+
+
 int main()
 {
     ax::App app;
     
     app.AddMainEntry([&app]()
     {
-        app.SetFrameSize(ax::Size(320, 240));
-                         
-        // Create editor.
-        //app.SetEditorInterface(new ax::Editor::Core(&app));
-                         
-        AlarmClock* panel = new AlarmClock(&app, ax::Rect(0, 0, 320, 240));
-        //        panel->AddProperty("AcceptWidget");
+//        
+        app.SetFrameSize(ax::Size(500, 500));
+        
+        axPanel* frame = new axPanel(&app, ax::Rect(0, 0, 500, 500));
+        AlarmClock* alarm = new AlarmClock(frame, ax::Rect(0, 0, 320, 240));
+//        alarm->Hide();
+        GLuint text_id = alarm->GetFrameBuffer()->GetFrameBufferTexture();
+        MyPanel* panel3d = new MyPanel(frame, ax::Rect(0, 0, 500, 500), alarm);
+//
+        
+//        app.SetFrameSize(ax::Size(600, 500));
+//        app.SetFrameSize(ax::Size(320, 240));
+        
+            // Create editor.
+//        app.SetEditorInterface(new ax::Editor::Core(&app));
+        
+//        AlarmClock* panel = new AlarmClock(&app, ax::Rect(0, 0, 320, 240));
+//                panel->AddProperty("AcceptWidget");
     });
     
     app.MainLoop();
