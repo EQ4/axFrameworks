@@ -205,10 +205,10 @@ void Settings::OnPaint()
 
 
 
-//AlarmClock::AlarmClock(ax::App* app, const ax::Rect& rect):
-AlarmClock::AlarmClock(ax::Window* parent, const ax::Rect& rect):
+AlarmClock::AlarmClock(ax::App* app, const ax::Rect& rect):
+//AlarmClock::AlarmClock(ax::Window* parent, const ax::Rect& rect):
 
-ax::Window(parent, rect),
+ax::Window(app, rect),
 _font(0),
 _font_clock("alarm_clock.ttf")
 {
@@ -417,23 +417,22 @@ int main()
     app.AddMainEntry([&app]()
     {
 //        
-        app.SetFrameSize(ax::Size(500, 500));
+//        app.SetFrameSize(ax::Size(500, 500));
         
-        axPanel* frame = new axPanel(&app, ax::Rect(0, 0, 500, 500));
-        AlarmClock* alarm = new AlarmClock(frame, ax::Rect(0, 0, 320, 240));
-//        alarm->Hide();
-        GLuint text_id = alarm->GetFrameBuffer()->GetFrameBufferTexture();
-        MyPanel* panel3d = new MyPanel(frame, ax::Rect(0, 0, 500, 500), alarm);
+//        axPanel* frame = new axPanel(&app, ax::Rect(0, 0, 500, 500));
+//        AlarmClock* alarm = new AlarmClock(frame, ax::Rect(0, 0, 320, 240));
+////        alarm->Hide();
+//        GLuint text_id = alarm->GetFrameBuffer()->GetFrameBufferTexture();
+//        MyPanel* panel3d = new MyPanel(frame, ax::Rect(0, 0, 500, 500), alarm);
 //
         
-//        app.SetFrameSize(ax::Size(600, 500));
-//        app.SetFrameSize(ax::Size(320, 240));
+        app.SetFrameSize(ax::Size(320, 240));
         
-            // Create editor.
+        // Create editor.
 //        app.SetEditorInterface(new ax::Editor::Core(&app));
         
-//        AlarmClock* panel = new AlarmClock(&app, ax::Rect(0, 0, 320, 240));
-//                panel->AddProperty("AcceptWidget");
+        AlarmClock* panel = new AlarmClock(&app, ax::Rect(0, 0, 320, 240));
+                panel->AddProperty("AcceptWidget");
     });
     
     app.MainLoop();

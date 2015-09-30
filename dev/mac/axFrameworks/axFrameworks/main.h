@@ -69,8 +69,8 @@ private:
 class AlarmClock : public ax::Window
 {
 public:
-    AlarmClock(ax::Window* parent, const ax::Rect& rect);
-//    AlarmClock(ax::App* app, const ax::Rect& rect);
+//    AlarmClock(ax::Window* parent, const ax::Rect& rect);
+    AlarmClock(ax::App* app, const ax::Rect& rect);
     
 private:
     ax::Font _font, _font_clock;
