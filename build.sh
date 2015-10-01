@@ -4,15 +4,24 @@
 
 # -laxEvent -laxUtils -laxGL -laxCore -laxWidget -laxAudio -laxAudioWidget -lpng -lfreetype -lportaudio -lsndfile
 
-libs=( axEvent 
-	   axUtils 
-	   axGL
-	   axExec
-	   axCore
-	   axWidget
-       axDatabase);
+libs=( axEvent
+    axUtils
+    axGL
+    axExec
+    axCore
+    axWidget
+    axDatabase);
 
-function build 
+function init
+{
+    echo "Cloning git submodules..."
+    git submodule init
+    git submodule update
+    git submodule foreach git pull origin master
+    git submodule foreach git checkout master
+}
+
+function build
 {
 	echo "BUILDING FUNCTION";
 
@@ -32,13 +41,13 @@ function build_combine_lib
 	echo COMBINE LIB
 	obj_list=();
 
-	combine_libs=( axEvent 
-				   axUtils 
-	   	           axGL
-	   	           axCore
-	   	           axWidget
-		           axExec
-				   axDatabase );
+	combine_libs=( axEvent
+     axUtils
+     axGL
+     axCore
+     axWidget
+     axExec
+     axDatabase );
 
 	for d in ${combine_libs[*]}; do
 		echo $d;
@@ -49,7 +58,7 @@ function build_combine_lib
 
 	cd ../
 	ar rsc lib/libaxLibCore.a ${obj_list[*]}
-	
+
 	#g++-4.9 -shared -o lib/libaxLibCore.so ${obj_list[*]}
 	clang++ -shared -undefined dynamic_lookup -o lib/libaxLibCore.so ${obj_list[*]}
 }
@@ -65,7 +74,7 @@ function build_single_module
 	cd ../;
 }
 
-function clean 
+function clean
 {
 	# echo "Cleaning FUNCTION";
 
@@ -88,7 +97,7 @@ function clean_single_module
 	cd ../;
 }
 
-function install 
+function install
 {
 	mkdir -p /usr/local/include/axLib/
 
@@ -104,7 +113,7 @@ function install
 opt="$1"
 opt2="$2"
 
-mkdir -p ./lib/ 
+mkdir -p ./lib/
 
 #------------------------------------------------------------------------------
 # Option : build
@@ -123,6 +132,13 @@ if [ "$opt" == "build" ]; then
 	else
 		echo "ERROR"
 	fi
+
+#------------------------------------------------------------------------------
+# Option : init
+#------------------------------------------------------------------------------
+
+elif [ "$opt" == "init" ]; then
+    init;
 
 #------------------------------------------------------------------------------
 # Option : clean
