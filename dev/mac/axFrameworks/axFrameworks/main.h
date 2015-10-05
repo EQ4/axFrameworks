@@ -49,6 +49,7 @@ private:
     ax::Font _font;
     ax::Image* _bg_img;
     
+    
     virtual void OnPaint();
 };
 
@@ -74,6 +75,7 @@ public:
 private:
     ax::Font _font, _font_clock;
     ax::Image* _bg_img;
+    ax::Image* _img_test;
     
     Alarm* _alarm;
     Settings* _settings;
