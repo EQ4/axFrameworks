@@ -18,15 +18,15 @@
 		<string>https://github.com/axlib/axGL.git</string>
 		<key>442EE830340D232CB721D5A93977DDAF333C1C35</key>
 		<string>https://github.com/axlib/axPython.git</string>
-		<key>4A95909481E1CE38D7ABFC1A623FC30095912A21</key>
-		<string>https://github.com/axlib/axFrameworks.git</string>
 		<key>77291991FD7C55CDDCD6AE4541627311F747C982</key>
 		<string>https://github.com/axlib/axServer.git</string>
 		<key>8768291391C042C5E68B260F840BA5DDD1C4BA6B</key>
 		<string>https://github.com/axlib/axEditor.git</string>
+		<key>8C7EFC9EF9B846B94E831BDA1B3B59FF0DB89232</key>
+		<string>https://github.com/axlib/axFrameworks.git</string>
 		<key>A30B41ED2F4002D56C1C89AFE4D3DAE37A75F1F8</key>
 		<string>https://github.com/axlib/axMath.git</string>
-		<key>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</key>
+		<key>BD1263E055654E0DFBAC93C98182AD5527B22E13</key>
 		<string>https://github.com/axlib/axCore.git</string>
 		<key>D202CB0C4C45DC71E14F8B9F728D038837E0BDAD</key>
 		<string>https://github.com/axlib/axWidget.git</string>
@@ -53,15 +53,15 @@
 		<string>../../../../../modules/axGL</string>
 		<key>442EE830340D232CB721D5A93977DDAF333C1C35</key>
 		<string>../../../../../modules/axPython</string>
-		<key>4A95909481E1CE38D7ABFC1A623FC30095912A21</key>
-		<string>../../../../..</string>
 		<key>77291991FD7C55CDDCD6AE4541627311F747C982</key>
 		<string>../../../../../modules/axServer</string>
 		<key>8768291391C042C5E68B260F840BA5DDD1C4BA6B</key>
 		<string>../../../../../modules/axEditor</string>
+		<key>8C7EFC9EF9B846B94E831BDA1B3B59FF0DB89232</key>
+		<string>../../../../..</string>
 		<key>A30B41ED2F4002D56C1C89AFE4D3DAE37A75F1F8</key>
 		<string>../../../../../modules/axMath</string>
-		<key>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</key>
+		<key>BD1263E055654E0DFBAC93C98182AD5527B22E13</key>
 		<string>../../../../../modules/axCore</string>
 		<key>D202CB0C4C45DC71E14F8B9F728D038837E0BDAD</key>
 		<string>../../../../../modules/axWidget</string>
@@ -81,7 +81,7 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4A95909481E1CE38D7ABFC1A623FC30095912A21</string>
+	<string>8C7EFC9EF9B846B94E831BDA1B3B59FF0DB89232</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -104,7 +104,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CA3A2F70A3EA1E1560C8E658CDFCDDD975CBBBAD</string>
+			<string>BD1263E055654E0DFBAC93C98182AD5527B22E13</string>
 			<key>IDESourceControlWCCName</key>
 			<string>axCore</string>
 		</dict>
@@ -144,7 +144,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4A95909481E1CE38D7ABFC1A623FC30095912A21</string>
+			<string>8C7EFC9EF9B846B94E831BDA1B3B59FF0DB89232</string>
 			<key>IDESourceControlWCCName</key>
 			<string>axFrameworks</string>
 		</dict>
