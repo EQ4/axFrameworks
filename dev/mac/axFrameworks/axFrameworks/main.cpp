@@ -216,6 +216,7 @@ _font_clock("alarm_clock.ttf")
     _font_clock.SetFontSize(110);
     
     _bg_img = new ax::Image("bg0.png");
+    _img_test = new ax::Image("toggle_on.png");
     
     ax::Button::Info info(ax::Color(0.8, 0.1),
                           ax::Color(0.8, 0.1),
@@ -279,6 +280,8 @@ void AlarmClock::OnPaint()
     // Draw background.
     gc.DrawImage(_bg_img, ax::Point(0, 0));
     
+    
+    
     // Draw date.
     gc.SetColor(ax::Color(1.0));
     gc.DrawString(_font, "Monday 21/09/2015", ax::Point(rect.size.x - 195, 4));
@@ -286,6 +289,8 @@ void AlarmClock::OnPaint()
     // Draw time.
     gc.SetColor(ax::Color(1.0));
     gc.DrawString(_font_clock, "08:43", ax::Point(20, 12));
+    
+    gc.DrawImage(_img_test, ax::Point(50, 50), 0.2);
     
 }
 
