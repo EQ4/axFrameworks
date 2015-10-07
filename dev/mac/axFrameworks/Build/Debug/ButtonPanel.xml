@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<axObjects>
+    <axButton
+        name="btn"
+        rect="120, 15, 50, 50"
+        info="btn_info.xml"
+        event="MyBtnFunc" 
+        msg="MonMessage"
+        label="Test1">
+    </axButton>
+
+    <axButton
+        name="btn2"
+        rect="220, 15, 50, 50"
+        info="btn_info.xml"
+        event="MyBtnFunc2" 
+        msg=""
+        label="Test2">
+    </axButton>
+</axObjects>
