@@ -1,0 +1,225 @@
+﻿Build started 10/7/2015 12:56:06 PM.
+     1>Project "C:\Users\alexarse\Project\axFrameworks\dev\windows\axFramework\axFramework\axFramework.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\alexarse\Project\axFrameworks\modules\axGL\include /IC:\Users\alexarse\Project\axFrameworks\modules\axCore\include /IC:\Users\alexarse\Project\axFrameworks\modules\axCore\core\Win32 /IC:\Users\alexarse\Project\axFrameworks\modules\axUtils\include /IC:\Users\alexarse\Project\axFrameworks\modules\axEvent\include /IC:\Users\alexarse\Project\axFrameworks\modules\axWidget\include /IC:\usr\local\include\freetype /IC:\usr\local\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\modules\axCore\core\Win32\axCoreWin32.cpp ..\..\..\..\modules\axCore\core\Win32\axWin32Utils.cpp ..\..\..\..\modules\axCore\source\axCoreFacade.cpp
+         axWin32Utils.cpp
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(8): error C2146: syntax error: missing ';' before identifier 'axRectToWin32Rect'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(11): error C2146: syntax error: missing ';' before identifier 'CreateDefaultWindowClassStructure'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(15): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(15): error C2065: 'win': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(16): error C2065: 'HINSTANCE': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(16): error C2065: 'hinstance': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(17): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(17): error C2065: 'style': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(18): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(18): error C2065: 'exStyle': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(19): error C2065: 'win_rect': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(20): error C2059: syntax error: 'const'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(23): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(25): error C2146: syntax error: missing ';' before identifier 'GetPixelFormatDescriptor'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(3): error C2039: 'axRectToWin32Rect': is not a member of 'axWin32'
+         c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(6): note: see declaration of 'axWin32'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(3): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(3): error C2146: syntax error: missing ';' before identifier 'axRectToWin32Rect'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(4): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(4): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(13): error C2039: 'CreateDefaultWindowClassStructure': is not a member of 'axWin32'
+         c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(6): note: see declaration of 'axWin32'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(13): error C2146: syntax error: missing ';' before identifier 'CreateDefaultWindowClassStructure'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(16): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(16): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(52): error C2039: 'CreateHWNDWindow': is not a member of 'axWin32'
+         c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(6): note: see declaration of 'axWin32'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(52): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(52): error C2065: 'win': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(53): error C2065: 'HINSTANCE': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(53): error C2065: 'hinstance': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(54): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(54): error C2065: 'style': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(55): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(55): error C2065: 'exStyle': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(56): error C2065: 'win_rect': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(57): error C2059: syntax error: 'const'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(59): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(59): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(78): error C2039: 'GetPixelFormatDescriptor': is not a member of 'axWin32'
+         c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(6): note: see declaration of 'axWin32'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(78): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(78): error C2146: syntax error: missing ';' before identifier 'GetPixelFormatDescriptor'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(79): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(79): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(105): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(105): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(107): error C2065: 'NULL': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(107): error C2065: 'msg': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(107): error C2228: left of '.c_str' must have class/struct/union
+         c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(107): note: type is 'unknown-type'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(107): error C2065: 'MB_OK': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(107): error C2065: 'MB_ICONEXCLAMATION': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.cpp(107): error C3861: 'MessageBox': identifier not found
+         axCoreWin32.cpp
+     1>c:\users\alexarse\project\axframeworks\modules\axutils\include\axvar.h(195): warning C4521: 'ax::Var': multiple copy constructors specified
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(8): error C2146: syntax error: missing ';' before identifier 'axRectToWin32Rect'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(11): error C2146: syntax error: missing ';' before identifier 'CreateDefaultWindowClassStructure'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(15): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(15): error C2065: 'win': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(16): error C2065: 'HINSTANCE': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(16): error C2065: 'hinstance': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(17): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(17): error C2065: 'style': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(18): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(18): error C2065: 'exStyle': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(19): error C2065: 'win_rect': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(20): error C2059: syntax error: 'const'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(23): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(25): error C2146: syntax error: missing ';' before identifier 'GetPixelFormatDescriptor'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(17): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(18): error C3646: 'GetScreenRect': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(18): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(18): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(23): error C3646: 'GetAppDirectory': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(23): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(23): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(24): error C3646: 'GetMainWindowHandle': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(24): error C2059: syntax error: '('
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(24): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(25): error C3646: 'GetPopupWindowHandle': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(25): error C2059: syntax error: '('
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(25): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(27): error C3646: 'OpenFileDialog': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(27): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(27): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(31): error C3646: 'GetScreenRelativePosition': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(31): error C2059: syntax error: '('
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(31): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(33): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(40): error C3646: 'GetScreenSize': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(40): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(41): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(55): error C3646: '_hdc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(58): error C3646: '_hrc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(60): error C3646: '_popHdc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(60): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(61): error C3646: '_popHrc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(61): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(64): error C3646: '_hwnd': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(64): error C2059: syntax error: ','
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(64): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(65): error C3646: '_instance': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(65): error C2059: syntax error: ','
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(65): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C3646: 'CALLBACK': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C3646: 'WindowCallback': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C2146: syntax error: missing ')' before identifier '_hwnd'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(70): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C3646: 'CALLBACK': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C3646: 'WindowPopupCallback': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C2146: syntax error: missing ')' before identifier '_hwnd'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(75): error C2238: unexpected token(s) preceding ';'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winnt.h(147): fatal error C1189: #error:  "No Target Architecture"
+         Generating Code...
+         Compiling...
+         axCoreFacade.cpp
+     1>c:\users\alexarse\project\axframeworks\modules\axutils\include\axvar.h(195): warning C4521: 'ax::Var': multiple copy constructors specified
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(8): error C2146: syntax error: missing ';' before identifier 'axRectToWin32Rect'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(11): error C2146: syntax error: missing ';' before identifier 'CreateDefaultWindowClassStructure'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(15): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(15): error C2065: 'win': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(16): error C2065: 'HINSTANCE': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(16): error C2065: 'hinstance': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(17): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(17): error C2065: 'style': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(18): error C2065: 'DWORD': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(18): error C2065: 'exStyle': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(19): error C2065: 'win_rect': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(20): error C2059: syntax error: 'const'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(23): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axwin32utils.h(25): error C2146: syntax error: missing ';' before identifier 'GetPixelFormatDescriptor'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(17): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(18): error C3646: 'GetScreenRect': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(18): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(18): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(23): error C3646: 'GetAppDirectory': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(23): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(23): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(24): error C3646: 'GetMainWindowHandle': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(24): error C2059: syntax error: '('
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(24): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(25): error C3646: 'GetPopupWindowHandle': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(25): error C2059: syntax error: '('
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(25): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(27): error C3646: 'OpenFileDialog': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(27): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(27): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(31): error C3646: 'GetScreenRelativePosition': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(31): error C2059: syntax error: '('
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(31): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(33): error C2143: syntax error: missing ',' before '&'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(40): error C3646: 'GetScreenSize': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(40): error C2059: syntax error: ')'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(41): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(55): error C3646: '_hdc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(58): error C3646: '_hrc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(60): error C3646: '_popHdc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(60): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(61): error C3646: '_popHrc': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(61): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(64): error C3646: '_hwnd': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(64): error C2059: syntax error: ','
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(64): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(65): error C3646: '_instance': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(65): error C2059: syntax error: ','
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(65): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C3646: 'CALLBACK': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C3646: 'WindowCallback': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(67): error C2146: syntax error: missing ')' before identifier '_hwnd'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(70): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C3646: 'CALLBACK': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C3646: 'WindowPopupCallback': unknown override specifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C2065: 'HWND': undeclared identifier
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(72): error C2146: syntax error: missing ')' before identifier '_hwnd'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\core\win32\axcorewin32.h(75): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): error C2259: 'axCoreWin32': cannot instantiate abstract class
+         c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): note: due to following members:
+         c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): note: 'void axCore::Init(const ax::Size &)': is abstract
+         c:\users\alexarse\project\axframeworks\modules\axcore\include\axcore.h(42): note: see declaration of 'axCore::Init'
+         c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): note: 'std::string axCore::GetAppDirectory(void)': is abstract
+         c:\users\alexarse\project\axframeworks\modules\axcore\include\axcore.h(50): note: see declaration of 'axCore::GetAppDirectory'
+         c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): note: 'ax::Rect axCore::GetScreenRect(void)': is abstract
+         c:\users\alexarse\project\axframeworks\modules\axcore\include\axcore.h(54): note: see declaration of 'axCore::GetScreenRect'
+         c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): note: 'ax::Size axCore::GetScreenSize(void)': is abstract
+         c:\users\alexarse\project\axframeworks\modules\axcore\include\axcore.h(56): note: see declaration of 'axCore::GetScreenSize'
+         c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): note: 'std::string axCore::OpenFileDialog(void)': is abstract
+         c:\users\alexarse\project\axframeworks\modules\axcore\include\axcore.h(58): note: see declaration of 'axCore::OpenFileDialog'
+         c:\users\alexarse\project\axframeworks\modules\axcore\source\axcorefacade.cpp(68): note: 'void axCore::ResizeFrame(const ax::Size &)': is abstract
+         c:\users\alexarse\project\axframeworks\modules\axcore\include\axcore.h(62): note: see declaration of 'axCore::ResizeFrame'
+         Generating Code...
+     1>Done Building Project "C:\Users\alexarse\Project\axFrameworks\dev\windows\axFramework\axFramework\axFramework.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.54
