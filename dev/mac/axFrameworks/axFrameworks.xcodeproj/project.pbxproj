@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC8B5671BBCD41500B7A4A2 /* axAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D11BA5FE5B00CEADC6 /* axAudio.cpp */; };
+		0CC8B5681BBCD41500B7A4A2 /* axAudioBiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D21BA5FE5B00CEADC6 /* axAudioBiquadFilter.cpp */; };
+		0CC8B5691BBCD41500B7A4A2 /* axAudioBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D31BA5FE5B00CEADC6 /* axAudioBuffer.cpp */; };
+		0CC8B56A1BBCD41500B7A4A2 /* axAudioBufferPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D41BA5FE5B00CEADC6 /* axAudioBufferPlayer.cpp */; };
+		0CC8B56B1BBCD41500B7A4A2 /* axAudioCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D51BA5FE5B00CEADC6 /* axAudioCore.cpp */; };
+		0CC8B56C1BBCD41500B7A4A2 /* axAudioEnvelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D61BA5FE5B00CEADC6 /* axAudioEnvelope.cpp */; };
+		0CC8B56D1BBCD41500B7A4A2 /* axAudioFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D71BA5FE5B00CEADC6 /* axAudioFilter.cpp */; };
+		0CC8B56E1BBCD41500B7A4A2 /* axAudioFirstOrderFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D81BA5FE5B00CEADC6 /* axAudioFirstOrderFilter.cpp */; };
+		0CC8B56F1BBCD41500B7A4A2 /* axAudioFrames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D91BA5FE5B00CEADC6 /* axAudioFrames.cpp */; };
+		0CC8B5701BBCD41500B7A4A2 /* axAudioSignalBalance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3DA1BA5FE5B00CEADC6 /* axAudioSignalBalance.cpp */; };
+		0CC8B5711BBCD41500B7A4A2 /* axAudioUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3DB1BA5FE5B00CEADC6 /* axAudioUtils.cpp */; };
+		0CC8B5721BBCD41500B7A4A2 /* axAudioWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3DC1BA5FE5B00CEADC6 /* axAudioWaveTable.cpp */; };
+		0CC8B5731BBCD41900B7A4A2 /* axParametricEq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FB1BA5FE5B00CEADC6 /* axParametricEq.cpp */; };
+		0CC8B5741BBCD41900B7A4A2 /* axWaveform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FC1BA5FE5B00CEADC6 /* axWaveform.cpp */; };
+		0CC8B5751BBCD41900B7A4A2 /* axWaveformNavigator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FD1BA5FE5B00CEADC6 /* axWaveformNavigator.cpp */; };
+		0CC8B5761BBCD41900B7A4A2 /* FilterParametric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FE1BA5FE5B00CEADC6 /* FilterParametric.cpp */; };
 		7CB54E2E1BACAEB300BD1AC5 /* axEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CB54E2D1BACAEB300BD1AC5 /* axEditor.cpp */; };
 		7CB54E311BACD24200BD1AC5 /* axEditorGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CB54E301BACD24200BD1AC5 /* axEditorGrid.cpp */; };
 		7CBE6A941BA8FEFE005E8FC6 /* axEditorAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A8E1BA8FEFE005E8FC6 /* axEditorAttributes.cpp */; };
@@ -16,22 +32,6 @@
 		7CBE6A981BA8FEFE005E8FC6 /* axEditorWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A921BA8FEFE005E8FC6 /* axEditorWidget.cpp */; };
 		7CBE6A991BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CBE6A931BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp */; };
 		7CD2E3981BA5FDFE00CEADC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD2E3971BA5FDFE00CEADC6 /* Images.xcassets */; };
-		7CD2E5781BA5FE5C00CEADC6 /* axAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D11BA5FE5B00CEADC6 /* axAudio.cpp */; };
-		7CD2E5791BA5FE5C00CEADC6 /* axAudioBiquadFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D21BA5FE5B00CEADC6 /* axAudioBiquadFilter.cpp */; };
-		7CD2E57A1BA5FE5C00CEADC6 /* axAudioBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D31BA5FE5B00CEADC6 /* axAudioBuffer.cpp */; };
-		7CD2E57B1BA5FE5C00CEADC6 /* axAudioBufferPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D41BA5FE5B00CEADC6 /* axAudioBufferPlayer.cpp */; };
-		7CD2E57C1BA5FE5C00CEADC6 /* axAudioCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D51BA5FE5B00CEADC6 /* axAudioCore.cpp */; };
-		7CD2E57D1BA5FE5C00CEADC6 /* axAudioEnvelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D61BA5FE5B00CEADC6 /* axAudioEnvelope.cpp */; };
-		7CD2E57E1BA5FE5C00CEADC6 /* axAudioFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D71BA5FE5B00CEADC6 /* axAudioFilter.cpp */; };
-		7CD2E57F1BA5FE5C00CEADC6 /* axAudioFirstOrderFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D81BA5FE5B00CEADC6 /* axAudioFirstOrderFilter.cpp */; };
-		7CD2E5801BA5FE5C00CEADC6 /* axAudioFrames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3D91BA5FE5B00CEADC6 /* axAudioFrames.cpp */; };
-		7CD2E5811BA5FE5C00CEADC6 /* axAudioSignalBalance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3DA1BA5FE5B00CEADC6 /* axAudioSignalBalance.cpp */; };
-		7CD2E5821BA5FE5C00CEADC6 /* axAudioUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3DB1BA5FE5B00CEADC6 /* axAudioUtils.cpp */; };
-		7CD2E5831BA5FE5C00CEADC6 /* axAudioWaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3DC1BA5FE5B00CEADC6 /* axAudioWaveTable.cpp */; };
-		7CD2E5921BA5FE5C00CEADC6 /* axParametricEq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FB1BA5FE5B00CEADC6 /* axParametricEq.cpp */; };
-		7CD2E5931BA5FE5C00CEADC6 /* axWaveform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FC1BA5FE5B00CEADC6 /* axWaveform.cpp */; };
-		7CD2E5941BA5FE5C00CEADC6 /* axWaveformNavigator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FD1BA5FE5B00CEADC6 /* axWaveformNavigator.cpp */; };
-		7CD2E5951BA5FE5C00CEADC6 /* FilterParametric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E3FE1BA5FE5B00CEADC6 /* FilterParametric.cpp */; };
 		7CD2E5AB1BA5FE5C00CEADC6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E41B1BA5FE5B00CEADC6 /* AppDelegate.mm */; };
 		7CD2E5AC1BA5FE5C00CEADC6 /* axCocoaInterfaceMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E41D1BA5FE5B00CEADC6 /* axCocoaInterfaceMac.mm */; };
 		7CD2E5AD1BA5FE5C00CEADC6 /* axCoreMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E41E1BA5FE5B00CEADC6 /* axCoreMac.cpp */; };
@@ -112,6 +112,7 @@
 		7CD2E66D1BA6042F00CEADC6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E66C1BA6042F00CEADC6 /* main.cpp */; };
 		7CD2E66F1BA6051B00CEADC6 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD2E66E1BA6051B00CEADC6 /* CoreMIDI.framework */; };
 		7CD2E6711BA6052B00CEADC6 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD2E6701BA6052B00CEADC6 /* Python.framework */; };
+		7CF640621BB99D0D0085ED4F /* axPanel3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF640611BB99D0D0085ED4F /* axPanel3D.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -324,6 +325,8 @@
 		7CD2E66C1BA6042F00CEADC6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7CD2E66E1BA6051B00CEADC6 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		7CD2E6701BA6052B00CEADC6 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		7CF640611BB99D0D0085ED4F /* axPanel3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axPanel3D.cpp; sourceTree = "<group>"; };
+		7CF640631BB99D180085ED4F /* axPanel3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axPanel3D.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -530,6 +533,7 @@
 		7CD2E4301BA5FE5B00CEADC6 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				7CF640631BB99D180085ED4F /* axPanel3D.h */,
 				7CD2E4311BA5FE5B00CEADC6 /* axApp.h */,
 				7CD2E4321BA5FE5B00CEADC6 /* axC++.h */,
 				7CD2E4331BA5FE5B00CEADC6 /* axConfig.h */,
@@ -553,6 +557,7 @@
 		7CD2E4451BA5FE5B00CEADC6 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				7CF640611BB99D0D0085ED4F /* axPanel3D.cpp */,
 				7CD2E4461BA5FE5B00CEADC6 /* axApp.cpp */,
 				7CD2E4471BA5FE5B00CEADC6 /* axC++.cpp */,
 				7CD2E4481BA5FE5B00CEADC6 /* axConfig.cpp */,
@@ -882,9 +887,9 @@
 				7CD2E50D1BA5FE5C00CEADC6 /* axInterpole.h */,
 				7CD2E50E1BA5FE5C00CEADC6 /* axPoint2D.h */,
 				7CD2E50F1BA5FE5C00CEADC6 /* axPrint.h */,
-				7CD2E5101BA5FE5C00CEADC6 /* axProperty.h */,
 				7CD2E5111BA5FE5C00CEADC6 /* axRange.h */,
 				7CD2E5121BA5FE5C00CEADC6 /* axRect2D.h */,
+				7CD2E5101BA5FE5C00CEADC6 /* axProperty.h */,
 				7CD2E5131BA5FE5C00CEADC6 /* axResourceStorage.h */,
 				7CD2E5141BA5FE5C00CEADC6 /* axString.h */,
 				7CD2E5151BA5FE5C00CEADC6 /* axUtils.h */,
@@ -1044,69 +1049,64 @@
 				7CD2E5BC1BA5FE5D00CEADC6 /* axCoreFacade.cpp in Sources */,
 				7CD2E6371BA5FE5D00CEADC6 /* axPrint.cpp in Sources */,
 				7CD2E5C51BA5FE5D00CEADC6 /* axWindowTree.cpp in Sources */,
+				0CC8B56F1BBCD41500B7A4A2 /* axAudioFrames.cpp in Sources */,
 				7CD2E5F81BA5FE5D00CEADC6 /* axGraphicInterface.cpp in Sources */,
 				7CD2E5BF1BA5FE5D00CEADC6 /* axObjectLoader.cpp in Sources */,
 				7CD2E5AD1BA5FE5C00CEADC6 /* axCoreMac.cpp in Sources */,
 				7CD2E63A1BA5FE5D00CEADC6 /* axRect2D.cpp in Sources */,
+				0CC8B56C1BBCD41500B7A4A2 /* axAudioEnvelope.cpp in Sources */,
 				7CD2E65B1BA5FE5D00CEADC6 /* axMenu.cpp in Sources */,
 				7CD2E6071BA5FE5D00CEADC6 /* axMidiCore.cpp in Sources */,
 				7CD2E65A1BA5FE5D00CEADC6 /* axLabel.cpp in Sources */,
 				7CD2E5D51BA5FE5D00CEADC6 /* axObject.cpp in Sources */,
-				7CD2E5931BA5FE5C00CEADC6 /* axWaveform.cpp in Sources */,
 				7CD2E6381BA5FE5D00CEADC6 /* axProperty.cpp in Sources */,
 				7CD2E6351BA5FE5D00CEADC6 /* axInterpole.cpp in Sources */,
-				7CD2E5821BA5FE5C00CEADC6 /* axAudioUtils.cpp in Sources */,
 				7CD2E5F91BA5FE5D00CEADC6 /* axImage.cpp in Sources */,
 				7CBE6A991BA8FEFE005E8FC6 /* axEditorWidgetPanel.cpp in Sources */,
 				7CD2E5E11BA5FE5D00CEADC6 /* axOSDynamic.cpp in Sources */,
+				0CC8B56D1BBCD41500B7A4A2 /* axAudioFilter.cpp in Sources */,
 				7CB54E2E1BACAEB300BD1AC5 /* axEditor.cpp in Sources */,
 				7CD2E5F41BA5FE5D00CEADC6 /* axFont.cpp in Sources */,
 				7CD2E5F21BA5FE5D00CEADC6 /* axBigImage.cpp in Sources */,
+				0CC8B56E1BBCD41500B7A4A2 /* axAudioFirstOrderFilter.cpp in Sources */,
 				7CD2E6321BA5FE5D00CEADC6 /* axControl.cpp in Sources */,
 				7CD2E6651BA5FE5D00CEADC6 /* axWidgetSelector.cpp in Sources */,
 				7CD2E5C11BA5FE5D00CEADC6 /* axWidget.cpp in Sources */,
 				7CD2E6611BA5FE5D00CEADC6 /* axStaticImage.cpp in Sources */,
-				7CD2E5791BA5FE5C00CEADC6 /* axAudioBiquadFilter.cpp in Sources */,
-				7CD2E5831BA5FE5C00CEADC6 /* axAudioWaveTable.cpp in Sources */,
 				7CD2E60D1BA5FE5D00CEADC6 /* axPython.cpp in Sources */,
 				7CD2E6181BA5FE5D00CEADC6 /* axServerClient.cpp in Sources */,
 				7CD2E6551BA5FE5D00CEADC6 /* axAnimatedButton.cpp in Sources */,
 				7CD2E5F71BA5FE5D00CEADC6 /* axGLMath.cpp in Sources */,
 				7CD2E5AC1BA5FE5C00CEADC6 /* axCocoaInterfaceMac.mm in Sources */,
 				7CD2E66D1BA6042F00CEADC6 /* main.cpp in Sources */,
-				7CD2E5811BA5FE5C00CEADC6 /* axAudioSignalBalance.cpp in Sources */,
 				7CD2E5BD1BA5FE5D00CEADC6 /* axKeyboardManager.cpp in Sources */,
 				7CD2E6581BA5FE5D00CEADC6 /* axGrid.cpp in Sources */,
+				0CC8B5701BBCD41500B7A4A2 /* axAudioSignalBalance.cpp in Sources */,
 				7CD2E5C01BA5FE5D00CEADC6 /* axPanel.cpp in Sources */,
 				7CBE6A941BA8FEFE005E8FC6 /* axEditorAttributes.cpp in Sources */,
-				7CD2E5941BA5FE5C00CEADC6 /* axWaveformNavigator.cpp in Sources */,
 				7CD2E6191BA5FE5D00CEADC6 /* axServerCore.cpp in Sources */,
-				7CD2E57C1BA5FE5C00CEADC6 /* axAudioCore.cpp in Sources */,
 				7CBE6A951BA8FEFE005E8FC6 /* axEditorSelector.cpp in Sources */,
-				7CD2E5801BA5FE5C00CEADC6 /* axAudioFrames.cpp in Sources */,
-				7CD2E57E1BA5FE5C00CEADC6 /* axAudioFilter.cpp in Sources */,
 				7CD2E63C1BA5FE5D00CEADC6 /* axString.cpp in Sources */,
 				7CD2E61D1BA5FE5D00CEADC6 /* axUrl.cpp in Sources */,
-				7CD2E57D1BA5FE5C00CEADC6 /* axAudioEnvelope.cpp in Sources */,
 				7CBE6A981BA8FEFE005E8FC6 /* axEditorWidget.cpp in Sources */,
 				7CD2E6331BA5FE5D00CEADC6 /* axDirection.cpp in Sources */,
 				7CD2E63D1BA5FE5D00CEADC6 /* axVar.cpp in Sources */,
 				7CD2E5BB1BA5FE5D00CEADC6 /* axCore.cpp in Sources */,
 				7CD2E63B1BA5FE5D00CEADC6 /* axResourceStorage.cpp in Sources */,
 				7CD2E5BA1BA5FE5D00CEADC6 /* axConfig.cpp in Sources */,
-				7CD2E5921BA5FE5C00CEADC6 /* axParametricEq.cpp in Sources */,
 				7CD2E5C41BA5FE5D00CEADC6 /* axWindowManager.cpp in Sources */,
 				7CB54E311BACD24200BD1AC5 /* axEditorGrid.cpp in Sources */,
 				7CD2E65D1BA5FE5D00CEADC6 /* axPopupMenu.cpp in Sources */,
 				7CD2E6361BA5FE5D00CEADC6 /* axPoint2D.cpp in Sources */,
+				7CF640621BB99D0D0085ED4F /* axPanel3D.cpp in Sources */,
 				7CD2E5F61BA5FE5D00CEADC6 /* axGC.cpp in Sources */,
 				7CD2E5AF1BA5FE5C00CEADC6 /* NSOpenGLView+axPopupWindowCocoaView.mm in Sources */,
 				7CD2E6301BA5FE5D00CEADC6 /* axClamp.cpp in Sources */,
-				7CD2E5781BA5FE5C00CEADC6 /* axAudio.cpp in Sources */,
 				7CD2E6601BA5FE5D00CEADC6 /* axSlider.cpp in Sources */,
 				7CD2E6641BA5FE5D00CEADC6 /* axToggle.cpp in Sources */,
+				0CC8B5731BBCD41900B7A4A2 /* axParametricEq.cpp in Sources */,
 				7CD2E5D41BA5FE5D00CEADC6 /* axMsg.cpp in Sources */,
-				7CD2E57F1BA5FE5C00CEADC6 /* axAudioFirstOrderFilter.cpp in Sources */,
+				0CC8B5721BBCD41500B7A4A2 /* axAudioWaveTable.cpp in Sources */,
 				7CD2E5AB1BA5FE5C00CEADC6 /* AppDelegate.mm in Sources */,
 				7CD2E65C1BA5FE5D00CEADC6 /* axNumberBox.cpp in Sources */,
 				7CD2E5B81BA5FE5D00CEADC6 /* axApp.cpp in Sources */,
@@ -1115,30 +1115,36 @@
 				7CBE6A971BA8FEFE005E8FC6 /* axEditorToolbar.cpp in Sources */,
 				7CD2E5F31BA5FE5D00CEADC6 /* axDefaultFontBuffer.cpp in Sources */,
 				7CD2E5E21BA5FE5D00CEADC6 /* axOSFileSystem.cpp in Sources */,
+				0CC8B5751BBCD41900B7A4A2 /* axWaveformNavigator.cpp in Sources */,
 				7CD2E6341BA5FE5D00CEADC6 /* axFlag.cpp in Sources */,
 				7CD2E5D61BA5FE5D00CEADC6 /* axTimer.cpp in Sources */,
 				7CD2E65E1BA5FE5D00CEADC6 /* axRadio.cpp in Sources */,
 				7CD2E5B91BA5FE5D00CEADC6 /* axC++.cpp in Sources */,
 				7CD2E5FE1BA5FE5D00CEADC6 /* axMathVector.cpp in Sources */,
+				0CC8B5741BBCD41900B7A4A2 /* axWaveform.cpp in Sources */,
+				0CC8B5681BBCD41500B7A4A2 /* axAudioBiquadFilter.cpp in Sources */,
+				0CC8B56B1BBCD41500B7A4A2 /* axAudioCore.cpp in Sources */,
 				7CD2E6561BA5FE5D00CEADC6 /* axButton.cpp in Sources */,
-				7CD2E57B1BA5FE5C00CEADC6 /* axAudioBufferPlayer.cpp in Sources */,
+				0CC8B5691BBCD41500B7A4A2 /* axAudioBuffer.cpp in Sources */,
 				7CD2E65F1BA5FE5D00CEADC6 /* axScrollBar.cpp in Sources */,
-				7CD2E5951BA5FE5C00CEADC6 /* FilterParametric.cpp in Sources */,
 				7CBE6A961BA8FEFE005E8FC6 /* axEditorMenu.cpp in Sources */,
+				0CC8B56A1BBCD41500B7A4A2 /* axAudioBufferPlayer.cpp in Sources */,
 				7CD2E5D31BA5FE5D00CEADC6 /* axEventManager.cpp in Sources */,
 				7CD2E5BE1BA5FE5D00CEADC6 /* axMouseManager.cpp in Sources */,
 				7CD2E6571BA5FE5D00CEADC6 /* axDropMenu.cpp in Sources */,
 				7CD2E6631BA5FE5D00CEADC6 /* axTextControl.cpp in Sources */,
+				0CC8B5711BBCD41500B7A4A2 /* axAudioUtils.cpp in Sources */,
 				7CD2E5D21BA5FE5D00CEADC6 /* axEvent.cpp in Sources */,
+				0CC8B5671BBCD41500B7A4A2 /* axAudio.cpp in Sources */,
 				7CD2E5E01BA5FE5D00CEADC6 /* axExec.cpp in Sources */,
 				7CD2E6391BA5FE5D00CEADC6 /* axRange.cpp in Sources */,
 				7CD2E5C81BA5FE5D00CEADC6 /* axDatabase.cpp in Sources */,
 				7CD2E6081BA5FE5D00CEADC6 /* RtMidi.cpp in Sources */,
+				0CC8B5761BBCD41900B7A4A2 /* FilterParametric.cpp in Sources */,
 				7CD2E6621BA5FE5D00CEADC6 /* axTextBox.cpp in Sources */,
 				7CD2E5C31BA5FE5D00CEADC6 /* axWindow.cpp in Sources */,
 				7CD2E5F51BA5FE5D00CEADC6 /* axFrameBuffer.cpp in Sources */,
 				7CD2E6311BA5FE5D00CEADC6 /* axColor.cpp in Sources */,
-				7CD2E57A1BA5FE5C00CEADC6 /* axAudioBuffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1260,20 +1266,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = axFrameworks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/alexarse/Project/axFrameworks/modules/axAudio/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axAudioWidget/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axCore/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axEvent/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axExec/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axGL/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axMath/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axMidi/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axPython/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axServer/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axUtils/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axWidget/lib,
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-lfreetype",
+					"-lpng",
+					"-lsqlite3",
+					"-lsndfile",
+					"-lcurl",
+					"-lportaudio",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1286,20 +1286,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = axFrameworks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/alexarse/Project/axFrameworks/modules/axAudio/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axAudioWidget/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axCore/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axEvent/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axExec/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axGL/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axMath/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axMidi/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axPython/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axServer/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axUtils/lib,
-					/Users/alexarse/Project/axFrameworks/modules/axWidget/lib,
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-lfreetype",
+					"-lpng",
+					"-lsqlite3",
+					"-lsndfile",
+					"-lcurl",
+					"-lportaudio",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
