@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F8695C37-D379-4AF9-B864-DF5219FF1AEB}</ProjectGuid>
+    <RootNamespace>axFramework</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\alexarse\Project\axFrameworks\modules\axGL\include;C:\Users\alexarse\Project\axFrameworks\modules\axCore\include;C:\Users\alexarse\Project\axFrameworks\modules\axCore\core\Win32;C:\Users\alexarse\Project\axFrameworks\modules\axUtils\include;C:\Users\alexarse\Project\axFrameworks\modules\axEvent\include;C:\Users\alexarse\Project\axFrameworks\modules\axWidget\include;C:\usr\local\include\freetype;C:\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\usr\local\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glew32.lib;zlib.lib;libpng.lib;freetype2.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\alexarse\Project\axFrameworks\modules\axGL\include;C:\Users\alexarse\Project\axFrameworks\modules\axCore\include;C:\Users\alexarse\Project\axFrameworks\modules\axCore\core\Win32;C:\Users\alexarse\Project\axFrameworks\modules\axUtils\include;C:\Users\alexarse\Project\axFrameworks\modules\axEvent\include;C:\Users\alexarse\Project\axFrameworks\modules\axWidget\include;C:\usr\local\include\freetype;C:\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\usr\local\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glew32.lib;zlib.lib;libpng.lib;freetype2.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\modules\axCore\core\Win32\axCoreWin32.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\core\Win32\axDebugWin32.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\core\Win32\axWin32Utils.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axApp.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axC++.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axConfig.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axCore.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axCoreFacade.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axKeyboardManager.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axLib.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axMouseManager.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axObjectLoader.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axPanel.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axPanel3D.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWidget.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWidgetBuilder.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWindow.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWindowManager.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWindowTree.h" />
+    <ClInclude Include="..\..\..\..\modules\axCore\include\rapidxml.hpp" />
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axEvent.h" />
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axEventManager.h" />
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axMsg.h" />
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axObject.h" />
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axTimer.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axBigImage.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axFont.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axFrameBuffer.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGC.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGL.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGLMath.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGraphicInterface.h" />
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axImage.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axClamp.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axColor.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axControl.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axDirection.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axFlag.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axInterpole.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axPoint2D.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axPrint.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axProperty.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axRange.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axRect2D.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axResourceStorage.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axString.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axUtils.h" />
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axVar.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axAnimatedButton.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axButton.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axDropMenu.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axGrid.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axKnob.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axLabel.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axMenu.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axNumberBox.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axPopupMenu.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axRadio.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axScrollBar.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axSlider.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axStaticImage.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axTextBox.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axTextControl.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axToggle.h" />
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axWidgetSelector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\modules\axCore\core\Win32\axCoreWin32.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\core\Win32\axDebugWin32.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\core\Win32\axWin32Utils.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axApp.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axC++.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axConfig.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axCore.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axCoreFacade.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axKeyboardManager.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axMouseManager.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axObjectLoader.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axPanel.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axPanel3D.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWidget.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWidgetBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWindow.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWindowManager.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWindowTree.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axEvent.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axEventManager.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axMsg.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axObject.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axTimer.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axBigImage.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axDefaultFontBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axFont.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axFrameBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axGC.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axGLMath.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axGraphicInterface.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axImage.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axClamp.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axColor.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axControl.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axDirection.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axFlag.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axInterpole.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axPoint2D.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axPrint.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axProperty.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axRange.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axRect2D.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axResourceStorage.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axString.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axVar.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axAnimatedButton.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axButton.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axDropMenu.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axGrid.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axKnob.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axLabel.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axMenu.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axNumberBox.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axPopupMenu.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axRadio.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axScrollBar.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axSlider.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axStaticImage.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axTextBox.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axTextControl.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axToggle.cpp" />
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axWidgetSelector.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="axEvent">
+      <UniqueIdentifier>{fa124fa4-9b72-4fab-8c17-7963374b2f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="axUtils">
+      <UniqueIdentifier>{9f4f7e37-487c-453a-aca6-dcab423ddf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="axCore">
+      <UniqueIdentifier>{fcd1dcc0-fdf5-4d23-b8dd-03388fc754c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="axCore\core">
+      <UniqueIdentifier>{476702f2-afb0-4dd5-9749-23bf96df519e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="axWidget">
+      <UniqueIdentifier>{da19915e-5551-4b10-a5b2-8c30ae1025c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="axGL">
+      <UniqueIdentifier>{1c0219c9-4060-4a12-a3bb-364c5f73788a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axVar.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axClamp.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axColor.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axControl.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axDirection.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axFlag.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axInterpole.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axPoint2D.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axPrint.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axProperty.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axRange.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axRect2D.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axResourceStorage.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axString.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axUtils\include\axUtils.h">
+      <Filter>axUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axEvent.h">
+      <Filter>axEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axEventManager.h">
+      <Filter>axEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axMsg.h">
+      <Filter>axEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axObject.h">
+      <Filter>axEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axEvent\include\axTimer.h">
+      <Filter>axEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axApp.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axC++.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axConfig.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axCore.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axCoreFacade.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axKeyboardManager.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axLib.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axMouseManager.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axObjectLoader.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axPanel.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axPanel3D.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWidget.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWidgetBuilder.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWindow.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWindowManager.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\axWindowTree.h">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\include\rapidxml.hpp">
+      <Filter>axCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\core\Win32\axCoreWin32.h">
+      <Filter>axCore\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\core\Win32\axDebugWin32.h">
+      <Filter>axCore\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axCore\core\Win32\axWin32Utils.h">
+      <Filter>axCore\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axAnimatedButton.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axButton.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axDropMenu.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axGrid.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axKnob.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axLabel.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axMenu.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axNumberBox.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axPopupMenu.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axRadio.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axScrollBar.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axSlider.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axStaticImage.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axTextBox.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axTextControl.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axToggle.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axWidget\include\axWidgetSelector.h">
+      <Filter>axWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axBigImage.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axFont.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axFrameBuffer.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGC.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGL.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGLMath.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axGraphicInterface.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\modules\axGL\include\axImage.h">
+      <Filter>axGL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axClamp.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axColor.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axControl.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axDirection.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axFlag.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axInterpole.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axPoint2D.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axPrint.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axProperty.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axRange.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axRect2D.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axResourceStorage.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axString.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axUtils\source\axVar.cpp">
+      <Filter>axUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axEvent.cpp">
+      <Filter>axEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axEventManager.cpp">
+      <Filter>axEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axMsg.cpp">
+      <Filter>axEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axObject.cpp">
+      <Filter>axEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axEvent\source\axTimer.cpp">
+      <Filter>axEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axApp.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axC++.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axConfig.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axCore.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axCoreFacade.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axKeyboardManager.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axMouseManager.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axObjectLoader.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axPanel.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axPanel3D.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWidget.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWidgetBuilder.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWindow.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWindowManager.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\source\axWindowTree.cpp">
+      <Filter>axCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\core\Win32\axCoreWin32.cpp">
+      <Filter>axCore\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\core\Win32\axDebugWin32.cpp">
+      <Filter>axCore\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axCore\core\Win32\axWin32Utils.cpp">
+      <Filter>axCore\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axAnimatedButton.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axButton.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axDropMenu.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axGrid.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axKnob.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axLabel.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axMenu.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axNumberBox.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axPopupMenu.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axRadio.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axScrollBar.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axSlider.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axStaticImage.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axTextBox.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axTextControl.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axToggle.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axWidget\source\axWidgetSelector.cpp">
+      <Filter>axWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axBigImage.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axDefaultFontBuffer.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axFont.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axFrameBuffer.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axGC.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axGLMath.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axGraphicInterface.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\modules\axGL\source\axImage.cpp">
+      <Filter>axGL</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
