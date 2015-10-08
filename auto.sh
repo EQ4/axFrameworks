@@ -1,11 +1,16 @@
 #!/bin/bash
 
+function echo_currDir
+{
+        echo -e "\n###\nProcessing $(pwd) \n###\n";
+}
+
 function commit_submodules
 {
 
         for dir in $(find modules/ -type d -maxdepth 1); do
                 cd $dir;
-                echo -e "\n###\nProcessing $(pwd) \n###\n";
+                echo_currDir;
                 git add .;
                 git commit -m "$1";
                 git push;
@@ -31,9 +36,11 @@ function clean_history
 {
         for dir in $(find modules/ -type d -maxdepth 1); do
                 cd $dir;
+                echo_currDir;
                 clean;
                 cd -;
         done
+        echo_currDir;
         clean;
 }
 
