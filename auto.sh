@@ -5,10 +5,11 @@ function echo_currDir
         echo -e "\n###\nProcessing $(pwd) \n###\n";
 }
 
-function commit_submodules
+function commit_all
 {
 
         for dir in $(find modules/ -type d -maxdepth 1); do
+                echo $dir;
                 cd $dir;
                 echo_currDir;
                 git add .;
@@ -47,6 +48,6 @@ function clean_history
 if [ "$1" == "clean_history" ]; then
         clean_history;
 
-elif [ "$1" == "commit_submodules" ]; then
-        commit_submodules "$2";
+elif [ "$1" == "commit_all" ]; then
+        commit_all "$2";
 fi
