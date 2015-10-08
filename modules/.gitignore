@@ -252,6 +252,7 @@ _Pvt_Extensions
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
+.DS_Store
 build/
 DerivedData
 
