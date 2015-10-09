@@ -5,6 +5,17 @@ function echo_currDir
         echo -e "\n###\nProcessing $(pwd) \n###\n";
 }
 
+function pullTheShit
+{
+
+        for dir in $(find modules/ -type d -maxdepth 1); do
+                cd $dir;
+                echo_currDir;
+                git pull;
+                cd -;
+        done
+}
+
 function commit_all
 {
 
@@ -50,4 +61,7 @@ if [ "$1" == "clean_history" ]; then
 
 elif [ "$1" == "commit_all" ]; then
         commit_all "$2";
+
+elif [ "$1" == "pullTheShit" ]; then
+        pullTheShit;
 fi
