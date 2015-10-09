@@ -30,7 +30,7 @@ INCLUDE_DIR = include/
 
 CPP_FILES := $(wildcard source/*.cpp)
 OBJ_FILES := $(addprefix build/,$(notdir $(CPP_FILES:.cpp=.o)))
-LD_FLAGS := 
+LD_FLAGS :=
 
 all: $(OBJ_FILES)
 	ar rcs lib/$(STATIC_LIB_NAME) $(OBJ_FILES)
@@ -38,8 +38,8 @@ all: $(OBJ_FILES)
 build/%.o: source/%.cpp
 	$(CC) $(CC_FLAGS) $(INCLUDE_SRC) -c -o $@ $<
 
-clean: 
-	rm -f $(OBJ_FILES)
+clean:
+	rm -f $(OBJDIR)/*.o
 	rm -f lib/$(STATIC_LIB_NAME)
 
 
