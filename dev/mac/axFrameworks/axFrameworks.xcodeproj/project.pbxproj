@@ -39,7 +39,6 @@
 		7CD2E5AE1BA5FE5C00CEADC6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD2E4201BA5FE5B00CEADC6 /* MainMenu.xib */; };
 		7CD2E5AF1BA5FE5C00CEADC6 /* NSOpenGLView+axPopupWindowCocoaView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4221BA5FE5B00CEADC6 /* NSOpenGLView+axPopupWindowCocoaView.mm */; };
 		7CD2E5B81BA5FE5D00CEADC6 /* axApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4461BA5FE5B00CEADC6 /* axApp.cpp */; };
-		7CD2E5B91BA5FE5D00CEADC6 /* axC++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4471BA5FE5B00CEADC6 /* axC++.cpp */; };
 		7CD2E5BA1BA5FE5D00CEADC6 /* axConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4481BA5FE5B00CEADC6 /* axConfig.cpp */; };
 		7CD2E5BB1BA5FE5D00CEADC6 /* axCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4491BA5FE5B00CEADC6 /* axCore.cpp */; };
 		7CD2E5BC1BA5FE5D00CEADC6 /* axCoreFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E44A1BA5FE5B00CEADC6 /* axCoreFacade.cpp */; };
@@ -192,7 +191,6 @@
 		7CD2E43F1BA5FE5B00CEADC6 /* axWindowTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axWindowTree.h; sourceTree = "<group>"; };
 		7CD2E4401BA5FE5B00CEADC6 /* rapidxml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
 		7CD2E4461BA5FE5B00CEADC6 /* axApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axApp.cpp; sourceTree = "<group>"; };
-		7CD2E4471BA5FE5B00CEADC6 /* axC++.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "axC++.cpp"; sourceTree = "<group>"; };
 		7CD2E4481BA5FE5B00CEADC6 /* axConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axConfig.cpp; sourceTree = "<group>"; };
 		7CD2E4491BA5FE5B00CEADC6 /* axCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axCore.cpp; sourceTree = "<group>"; };
 		7CD2E44A1BA5FE5B00CEADC6 /* axCoreFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axCoreFacade.cpp; sourceTree = "<group>"; };
@@ -547,7 +545,6 @@
 			children = (
 				7CF640611BB99D0D0085ED4F /* axPanel3D.cpp */,
 				7CD2E4461BA5FE5B00CEADC6 /* axApp.cpp */,
-				7CD2E4471BA5FE5B00CEADC6 /* axC++.cpp */,
 				7CD2E4481BA5FE5B00CEADC6 /* axConfig.cpp */,
 				7CD2E4491BA5FE5B00CEADC6 /* axCore.cpp */,
 				7CD2E44A1BA5FE5B00CEADC6 /* axCoreFacade.cpp */,
@@ -983,7 +980,7 @@
 		7CD2E3851BA5FDFD00CEADC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Alexandre Arsenault";
 				TargetAttributes = {
 					7CD2E38C1BA5FDFD00CEADC6 = {
@@ -1096,7 +1093,6 @@
 				7CD2E6341BA5FE5D00CEADC6 /* axFlag.cpp in Sources */,
 				7CD2E5D61BA5FE5D00CEADC6 /* axTimer.cpp in Sources */,
 				7CD2E65E1BA5FE5D00CEADC6 /* axRadio.cpp in Sources */,
-				7CD2E5B91BA5FE5D00CEADC6 /* axC++.cpp in Sources */,
 				7CD2E5FE1BA5FE5D00CEADC6 /* axMathVector.cpp in Sources */,
 				0CC8B5741BBCD41900B7A4A2 /* axWaveform.cpp in Sources */,
 				0CC8B5681BBCD41500B7A4A2 /* axAudioBiquadFilter.cpp in Sources */,
@@ -1147,6 +1143,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1251,6 +1248,7 @@
 					"-lcurl",
 					"-lportaudio",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ax.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1271,6 +1269,7 @@
 					"-lcurl",
 					"-lportaudio",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ax.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
