@@ -451,7 +451,7 @@ class CPanel : public ax::Window
 {
 public:
     CPanel(ax::App* app, const ax::Rect& rect):
-    ax::Window(app, rect),
+    ax::Window(rect),
     _font(0)
     {
         // Connect base events.
@@ -582,13 +582,14 @@ private:
 
 int main()
 {
-    ax::App app;
+    ax::App& app = ax::App::GetInstance();
     
     app.AddMainEntry([&app]()
     {
         app.SetFrameSize(ax::Size(500, 500));
         
-        ax::Window::Ptr win = app.AddTopLevel(ax::Window::Ptr(new ax::Window(&app, ax::Rect(0, 0, 500, 500))));
+        ax::Window::Ptr win = app.AddTopLevel(ax::Window::Ptr(
+				new ax::Window(ax::Rect(0, 0, 500, 500))));
         
         win->event.OnPaint = ax::WFunc<ax::GC>([win](ax::GC gc)
         {
