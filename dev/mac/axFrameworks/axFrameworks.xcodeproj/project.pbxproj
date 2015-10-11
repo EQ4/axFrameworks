@@ -39,7 +39,6 @@
 		7CD2E5AE1BA5FE5C00CEADC6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD2E4201BA5FE5B00CEADC6 /* MainMenu.xib */; };
 		7CD2E5AF1BA5FE5C00CEADC6 /* NSOpenGLView+axPopupWindowCocoaView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4221BA5FE5B00CEADC6 /* NSOpenGLView+axPopupWindowCocoaView.mm */; };
 		7CD2E5B81BA5FE5D00CEADC6 /* axApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4461BA5FE5B00CEADC6 /* axApp.cpp */; };
-		7CD2E5B91BA5FE5D00CEADC6 /* axC++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4471BA5FE5B00CEADC6 /* axC++.cpp */; };
 		7CD2E5BA1BA5FE5D00CEADC6 /* axConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4481BA5FE5B00CEADC6 /* axConfig.cpp */; };
 		7CD2E5BB1BA5FE5D00CEADC6 /* axCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E4491BA5FE5B00CEADC6 /* axCore.cpp */; };
 		7CD2E5BC1BA5FE5D00CEADC6 /* axCoreFacade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2E44A1BA5FE5B00CEADC6 /* axCoreFacade.cpp */; };
@@ -176,9 +175,8 @@
 		7CD2E4211BA5FE5B00CEADC6 /* NSOpenGLView+axPopupWindowCocoaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOpenGLView+axPopupWindowCocoaView.h"; sourceTree = "<group>"; };
 		7CD2E4221BA5FE5B00CEADC6 /* NSOpenGLView+axPopupWindowCocoaView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSOpenGLView+axPopupWindowCocoaView.mm"; sourceTree = "<group>"; };
 		7CD2E4311BA5FE5B00CEADC6 /* axApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axApp.h; sourceTree = "<group>"; };
-		7CD2E4321BA5FE5B00CEADC6 /* axC++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "axC++.h"; sourceTree = "<group>"; };
 		7CD2E4331BA5FE5B00CEADC6 /* axConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axConfig.h; sourceTree = "<group>"; };
-		7CD2E4341BA5FE5B00CEADC6 /* axCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axCore.h; sourceTree = "<group>"; };
+		7CD2E4341BA5FE5B00CEADC6 /* axCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axCore.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		7CD2E4351BA5FE5B00CEADC6 /* axCoreFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axCoreFacade.h; sourceTree = "<group>"; };
 		7CD2E4361BA5FE5B00CEADC6 /* axKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axKeyboardManager.h; sourceTree = "<group>"; };
 		7CD2E4371BA5FE5B00CEADC6 /* axLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axLib.h; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 		7CD2E43F1BA5FE5B00CEADC6 /* axWindowTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axWindowTree.h; sourceTree = "<group>"; };
 		7CD2E4401BA5FE5B00CEADC6 /* rapidxml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
 		7CD2E4461BA5FE5B00CEADC6 /* axApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axApp.cpp; sourceTree = "<group>"; };
-		7CD2E4471BA5FE5B00CEADC6 /* axC++.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "axC++.cpp"; sourceTree = "<group>"; };
 		7CD2E4481BA5FE5B00CEADC6 /* axConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axConfig.cpp; sourceTree = "<group>"; };
 		7CD2E4491BA5FE5B00CEADC6 /* axCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axCore.cpp; sourceTree = "<group>"; };
 		7CD2E44A1BA5FE5B00CEADC6 /* axCoreFacade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axCoreFacade.cpp; sourceTree = "<group>"; };
@@ -523,7 +520,6 @@
 			children = (
 				7CF640631BB99D180085ED4F /* axPanel3D.h */,
 				7CD2E4311BA5FE5B00CEADC6 /* axApp.h */,
-				7CD2E4321BA5FE5B00CEADC6 /* axC++.h */,
 				7CD2E4331BA5FE5B00CEADC6 /* axConfig.h */,
 				7CD2E4341BA5FE5B00CEADC6 /* axCore.h */,
 				7CD2E4351BA5FE5B00CEADC6 /* axCoreFacade.h */,
@@ -547,7 +543,6 @@
 			children = (
 				7CF640611BB99D0D0085ED4F /* axPanel3D.cpp */,
 				7CD2E4461BA5FE5B00CEADC6 /* axApp.cpp */,
-				7CD2E4471BA5FE5B00CEADC6 /* axC++.cpp */,
 				7CD2E4481BA5FE5B00CEADC6 /* axConfig.cpp */,
 				7CD2E4491BA5FE5B00CEADC6 /* axCore.cpp */,
 				7CD2E44A1BA5FE5B00CEADC6 /* axCoreFacade.cpp */,
@@ -1096,7 +1091,6 @@
 				7CD2E6341BA5FE5D00CEADC6 /* axFlag.cpp in Sources */,
 				7CD2E5D61BA5FE5D00CEADC6 /* axTimer.cpp in Sources */,
 				7CD2E65E1BA5FE5D00CEADC6 /* axRadio.cpp in Sources */,
-				7CD2E5B91BA5FE5D00CEADC6 /* axC++.cpp in Sources */,
 				7CD2E5FE1BA5FE5D00CEADC6 /* axMathVector.cpp in Sources */,
 				0CC8B5741BBCD41900B7A4A2 /* axWaveform.cpp in Sources */,
 				0CC8B5681BBCD41500B7A4A2 /* axAudioBiquadFilter.cpp in Sources */,

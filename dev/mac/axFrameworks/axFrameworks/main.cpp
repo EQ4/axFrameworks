@@ -447,161 +447,163 @@
 //    return 0;
 //}
 
-class CPanel : public ax::Window
-{
-public:
-    CPanel(ax::App* app, const ax::Rect& rect):
-    ax::Window(app, rect),
-    _font(0)
-    {
-        // Connect base events.
-        event.OnPaint = ax::WBind<ax::GC>(this, &CPanel::OnPaint);
-        event.OnMouseLeftDown = ax::WBind<ax::Point>(this, &CPanel::Shit);
-
-        
-        auto btn1 = node.Add(ax::Button::Create(shared_from_this(),
-                                                ax::Point(10, 50),
-                                                GetOnPush(), "Push"));
-        
-        node.Add(ax::Button::Create(shared_from_this(),
-                                    btn1->dimension.GetRect().GetNextPosRight(10),
-                                    GetOnPop(), "Pop"));
-        
-        
-        node.Add(_box1 = ax::NumberBox::Create(shared_from_this(),
-                                               ax::Point(10, 85)));
-        
-        node.Add(_box2 = ax::NumberBox::Create(shared_from_this(),
-                                               _box1->dimension.GetRect().GetNextPosDown(10)));
-
-//        ax::TextBox::Events txt_evts;
-//        txt_evts.enter_click = GetOnTextEnter();
-//        _txt1 = new ax::TextBox(this, ax::Rect(200, 50, 200, 25), txt_evts);
-//        
-//        ax::Label* lab1 = new ax::Label(this, ax::Rect(10, 10, 50, 25), "Potato");
-//        
-//        ax::Knob* knob1 = new ax::Knob(this, ax::Point(80, 80));
-//        
-//        axGrid* grid = new axGrid(this,
-//                                  ax::Rect(150, 100, 100, 55),
-//                                  axGridEvents(),
-//                                  axGridInfo(),
-//                                  ax::Size(5, 2));
-//        
-//        ax::Slider* sld1 = new ax::Slider(this, ax::Rect(270, 100, 100, 15),
-//                                          ax::Slider::Events(),
-//                                          ax::Slider::Info(),
-//                                          axSLIDER_FLAG_CLICK_ANYWHERE);
-    }
-    
-private:
-    ax::Font _font;
-    ax::StringVector _strs;
-    ax::NumberBox::Ptr _box1, _box2;
-//    ax::NumberBox *_box1, *_box2;
-//    ax::TextBox* _txt1;
-//    
-    void Shit(const ax::Point& pt)
-    {
-        std::cout << "Mouse left down : " << pt.x << " " << pt.y << std::endl;
-        
-    }
-//
-//    std::string GenerateText()
+//class CPanel : public ax::Window
+//{
+//public:
+//    CPanel(ax::App* app, const ax::Rect& rect):
+//    ax::Window(app, rect),
+//    _font(0)
 //    {
-//        std::string v1 = std::to_string(_box1->GetValue());
-//        v1.resize(4);
+//        // Connect base events.
+//        event.OnPaint = ax::WBind<ax::GC>(this, &CPanel::OnPaint);
+//        event.OnMouseLeftDown = ax::WBind<ax::Point>(this, &CPanel::Shit);
+//
 //        
-//        std::string v2 = std::to_string(_box2->GetValue());
-//        v2.resize(4);
+//        auto btn1 = node.Add(ax::Button::Create(shared_from_this(),
+//                                                ax::Point(10, 50),
+//                                                GetOnPush(), "Push"));
 //        
-//        return v1 + " " + v2 + " " +  _txt1->GetLabel();
+//        node.Add(ax::Button::Create(shared_from_this(),
+//                                    btn1->dimension.GetRect().GetNextPosRight(10),
+//                                    GetOnPop(), "Pop"));
+//        
+//        
+//        node.Add(_box1 = ax::NumberBox::Create(shared_from_this(),
+//                                               ax::Point(10, 85)));
+//        
+//        node.Add(_box2 = ax::NumberBox::Create(shared_from_this(),
+//                                               _box1->dimension.GetRect().GetNextPosDown(10)));
+//
+////        ax::TextBox::Events txt_evts;
+////        txt_evts.enter_click = GetOnTextEnter();
+////        _txt1 = new ax::TextBox(this, ax::Rect(200, 50, 200, 25), txt_evts);
+////        
+////        ax::Label* lab1 = new ax::Label(this, ax::Rect(10, 10, 50, 25), "Potato");
+////        
+////        ax::Knob* knob1 = new ax::Knob(this, ax::Point(80, 80));
+////        
+////        axGrid* grid = new axGrid(this,
+////                                  ax::Rect(150, 100, 100, 55),
+////                                  axGridEvents(),
+////                                  axGridInfo(),
+////                                  ax::Size(5, 2));
+////        
+////        ax::Slider* sld1 = new ax::Slider(this, ax::Rect(270, 100, 100, 15),
+////                                          ax::Slider::Events(),
+////                                          ax::Slider::Info(),
+////                                          axSLIDER_FLAG_CLICK_ANYWHERE);
 //    }
 //    
-//    axEVENT_ACCESSOR(ax::TextBox::Msg, OnTextEnter);
-//    void OnTextEnter(const ax::TextBox::Msg& msg)
+//private:
+//    ax::Font _font;
+//    ax::StringVector _strs;
+//    ax::NumberBox::Ptr _box1, _box2;
+////    ax::NumberBox *_box1, *_box2;
+////    ax::TextBox* _txt1;
+////    
+//    void Shit(const ax::Point& pt)
+//    {
+//        std::cout << "Mouse left down : " << pt.x << " " << pt.y << std::endl;
+//        
+//    }
+////
+////    std::string GenerateText()
+////    {
+////        std::string v1 = std::to_string(_box1->GetValue());
+////        v1.resize(4);
+////        
+////        std::string v2 = std::to_string(_box2->GetValue());
+////        v2.resize(4);
+////        
+////        return v1 + " " + v2 + " " +  _txt1->GetLabel();
+////    }
+////    
+////    axEVENT_ACCESSOR(ax::TextBox::Msg, OnTextEnter);
+////    void OnTextEnter(const ax::TextBox::Msg& msg)
+////    {
+////        ax::Print("Push");
+////        _strs.push_back(GenerateText());
+////        Update();
+////    }
+////    
+//    axEVENT_ACCESSOR(ax::Button::Msg, OnPush);
+//    void OnPush(const ax::Button::Msg& msg)
 //    {
 //        ax::Print("Push");
-//        _strs.push_back(GenerateText());
+////        _strs.push_back(GenerateText());
 //        Update();
 //    }
 //    
-    axEVENT_ACCESSOR(ax::Button::Msg, OnPush);
-    void OnPush(const ax::Button::Msg& msg)
-    {
-        ax::Print("Push");
-//        _strs.push_back(GenerateText());
-        Update();
-    }
-    
-    axEVENT_ACCESSOR(ax::Button::Msg, OnPop);
-    void OnPop(const ax::Button::Msg& msg)
-    {
-        ax::Print("Pop");
-        if(_strs.size())
-        {
-            _strs.pop_back();
-            Update();
-        }
-    }
-    
-    void OnPaint(ax::GC gc)
-    {
-//        ax::GC gc;
-        ax::Rect rect(dimension.GetDrawingRect());
-        
-        gc.SetColor(ax::Color(0.98));
-        gc.DrawRectangle(rect);
-        
-        
-        ax::Point pos(0, 160);
-        
-        for(int i = 0; i < _strs.size(); i++)
-        {
-            if(i % 2)
-            {
-                gc.SetColor(ax::Color(0.95));
-            }
-            else
-            {
-                gc.SetColor(ax::Color(0.98));
-            }
-            
-            gc.DrawRectangle(ax::Rect(pos, ax::Size(rect.size.x, 20)));
-            gc.SetColor(ax::Color(0.4));
-            gc.DrawString(_font, _strs[i], pos + ax::Point(10, 0));
-            pos.y += 20;
-        }
-        
-        gc.SetColor(ax::Color(0.5));
-        gc.DrawRectangleContour(rect);
-    }
-};
+//    axEVENT_ACCESSOR(ax::Button::Msg, OnPop);
+//    void OnPop(const ax::Button::Msg& msg)
+//    {
+//        ax::Print("Pop");
+//        if(_strs.size())
+//        {
+//            _strs.pop_back();
+//            Update();
+//        }
+//    }
+//    
+//    void OnPaint(ax::GC gc)
+//    {
+////        ax::GC gc;
+//        ax::Rect rect(dimension.GetDrawingRect());
+//        
+//        gc.SetColor(ax::Color(0.98));
+//        gc.DrawRectangle(rect);
+//        
+//        
+//        ax::Point pos(0, 160);
+//        
+//        for(int i = 0; i < _strs.size(); i++)
+//        {
+//            if(i % 2)
+//            {
+//                gc.SetColor(ax::Color(0.95));
+//            }
+//            else
+//            {
+//                gc.SetColor(ax::Color(0.98));
+//            }
+//            
+//            gc.DrawRectangle(ax::Rect(pos, ax::Size(rect.size.x, 20)));
+//            gc.SetColor(ax::Color(0.4));
+//            gc.DrawString(_font, _strs[i], pos + ax::Point(10, 0));
+//            pos.y += 20;
+//        }
+//        
+//        gc.SetColor(ax::Color(0.5));
+//        gc.DrawRectangleContour(rect);
+//    }
+//};
 
 
 
 int main()
 {
-    ax::App app;
+    ax::App& app = ax::App::GetInstance();
     
     app.AddMainEntry([&app]()
     {
         app.SetFrameSize(ax::Size(500, 500));
-        
-        ax::Window::Ptr win = app.AddTopLevel(ax::Window::Ptr(new ax::Window(&app, ax::Rect(0, 0, 500, 500))));
-        
-        win->event.OnPaint = ax::WFunc<ax::GC>([win](ax::GC gc)
-        {
+		
+		ax::Window::Ptr win(ax::Window::Create(ax::Rect(0, 0, 500, 500)));
+		
+        win->event.OnPaint = ax::WFunc<ax::GC>([win](ax::GC gc) {
             ax::Rect rect(win->dimension.GetDrawingRect());
-            
-            gc.SetColor(ax::Color(0.98));
+			
+			gc.SetColor(ax::Color(0.98));
             gc.DrawRectangle(rect);
-
         });
         
-        ax::Event::Function btn_click([](ax::Event::Msg* msg) { ax::Print("Push event"); });
+        ax::Event::Function btn_click([](ax::Event::Msg* msg) {
+			ax::Print("Push event");
+			});
         
-        win->node.Add(ax::Button::Create(win, ax::Point(10, 50), btn_click, "Push"));
+        win->node.Add(ax::Button::Create(win, ax::Point(10, 50),
+			btn_click, "Push"));
+			
         win->node.Add(ax::NumberBox::Create(win, ax::Point(10, 85)));
         
         
