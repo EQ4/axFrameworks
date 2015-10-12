@@ -59,14 +59,11 @@ int main()
 		
 		ax::Window::Ptr w2 = ax::Window::Create(ax::Rect(20, 20, 20, 20));
 
-		ax::Window::Ptr w1 = win->node.Add(ax::Window::Create(ax::Rect(20, 20, 20, 20)));
+		ax::Window::Ptr w1 =
+			win->node.Add(ax::Window::Create(ax::Rect(20, 20, 20, 20)));
 		
 		w1->event.OnPaint = ax::WFunc<ax::GC>([=](ax::GC gc){
-			ax::Print("My paint inline Paint");
 			ax::Rect rect(w1->dimension.GetDrawingRect());
-			
-			ax::Print("rect ", rect.size.x);
-			
 			gc.SetColor(ax::Color(0.9f, 0.1f, 0.3f));
 			gc.DrawRectangle(rect);
 
