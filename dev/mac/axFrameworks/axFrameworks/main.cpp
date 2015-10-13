@@ -1,4 +1,14 @@
 #include "main.h"
+#include "axNumberBox.h"
+
+class Topbar : public ax::Window::Backbone
+{
+public:
+	Topbar()
+	{
+		
+	}
+};
 
 class CPanel : public ax::Window::Backbone
 {
@@ -16,6 +26,9 @@ public:
 		win->node.Add(ax::Button::Create(ax::Point(10, 10),
 			ax::Event::Bind(this, &CPanel::OnButtonClick), "Button"));
 		
+		win->node.Add(ax::NumberBox::Create(ax::Point(10, 40),
+			ax::NumberBox::Events()));
+
 		AssignWindow(win);
 	}
 	
@@ -33,6 +46,9 @@ public:
 		
 		gc.SetColor(ax::Color(0.9f, 0.6f, 0.3f));
 		gc.DrawRectangle(rect);
+		
+		gc.SetColor(ax::Color(1.0f, 0.6f, 0.4f));
+		gc.DrawRectangleContour(rect);
 	}
 };
 
@@ -62,13 +78,11 @@ int main()
 		ax::Window::Ptr w1 =
 			win->node.Add(ax::Window::Create(ax::Rect(20, 20, 20, 20)));
 		
-		w1->event.OnPaint = ax::WFunc<ax::GC>([=](ax::GC gc){
+		w1->event.OnPaint = ax::WFunc<ax::GC>([=](ax::GC gc) {
 			ax::Rect rect(w1->dimension.GetDrawingRect());
 			gc.SetColor(ax::Color(0.9f, 0.1f, 0.3f));
 			gc.DrawRectangle(rect);
-
 		});
-
     });
 	
     app.MainLoop();
